@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<header>
+    <title>Games</title>
+    <script src="https://agentseed.org/particles.js/particles.min.js"></script>
+</header>
+<body onload="why()">
+<div id="top-bar">
+    <a href="https://blockedatschool.com">
+    <h1 id="title">Blockedatschool.com</h1></a>
+</div>
+<center>
+<p id="motto">Free games, always &reg;</p>
+<div id="banner">New games every friday!</div>
+</center>
+<hr class="br">
+<center>
+<div class="about">
+    <h2>Trusted Games</h2>
+    <a href="/games/dino" class="game-link">Dino game</a>
+    <hr class="br">
+    <a href="https://windows93.net/" class="game-link">Windows 93</a>
+    <hr class="br">
+    <a href="https://play.unity.com/" class="game-link">Unity play</a>
+    <hr class="br">
+    <a href="https://xkcd.com/1608" class="game-link">xkcd hoverboard</a>
+    <hr class="br">
+    <a href="https://www.google.com/fbx?fbx=snake_arcade" class="game-link">Snake</a>
+    <hr class="br">
+    <a href="/games/doom" class="game-link">Doom</a>
+    <hr class="br">
+    <a href="/games/stick" class="game-link">Stick extend</a>
+    <hr class="br">
+    <hr class="br">
+    <h2>Other games</h2>
+    <p class="descrip">These games are hosted on 3rd party sites, they may contain ads</p>
+    <hr class="br">
+    <hr class="br">
+    <a href="https://slope.ee" class="game-link">Slope</a>
+    <hr class="br">
+    <a href="https://supermario.ee" class="game-link">Super Mario Bros</a>
+    <hr class="br">
+    <a href="https://tictactoe.ee" class="game-link">Tic Tac Toe</a>
+    <hr class="br">
+    <a href="https://pacman.ee" class="game-link">Pacman</a>
+    <hr class="br">
+    <a href="https://pvz.ee" class="game-link">Plants vs. Zombies</a>
+    <hr class="br">
+    <a href="https://minesweeper.ee" class="game-link">Minesweeper</a>
+    <hr class="br">
+    <a href="https://ponggame.io" class="game-link">Pong</a>
+    <hr class="br">
+    <a href="https://kong.ee" class="game-link">Donkey Kong</a>
+    <hr class="br">
+    <a href="https://sonic.ee" class="game-link">Sonic the Hedgehog</a>
+    <hr class="br">
+    <a href="https://invaders.ee" class="game-link">Space Invaders</a>
+    <hr class="br">
+    <a href="https://galaga.ee" class="game-link">Galaga</a>
+    <hr class="br">
+    <a href="https://frogger.ee" class="game-link">Frogger</a>
+    <hr class="br">
+    <a href="https://aow.ee" class="game-link">Age of War</a>
+    <hr class="br">
+    <a href="https://watersortgame.com" class="game-link">Water sort game</a>
+    <hr class="br">
+    <a href="https://playwordle.io" class="game-link">Wordle</a>
+    <hr class="br">
+    <a href="https://freemahjong.io" class="game-link">Mahjong</a>
+    <hr class="br">
+    <a href="https://chesswal.com" class="game-link">Chess</a>
+    <hr class="br">
+    <a href="https://asteroids.ee" class="game-link">Asteroids</a>
+    <hr class="br">
+    <a href="https://jetpac.ee" class="game-link">Jetpac</a>
+    <hr class="br">
+    <a href="https://sudokugame.ee" class="game-link">Sudoku</a>
+    <hr class="br">
+    <hr class="bottom">
+    <p><a>Copyright (&copy;) 2022 | </a><a href="mailto:sup@blockedatschool.com">Email us</a></p>
+    <div id="particles-js"></div>
+</center>
+</body>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+    :root {
+        --text-grad: linear-gradient(45deg, rgba(233,22,22,1) 0%, rgb(16, 28, 201) 25%, rgba(15,224,41,1) 50%, rgba(15,28,224,1) 75%, rgba(255,0,0,1) 100%);
+        --button-grad: linear-gradient(45deg, rgba(233,22,22,1) 0%, rgba(16,28,201,1) 50%, rgba(233,22,22,1));
+        --controller-pic: url(https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8dmlkZW8lMjBnYW1lc3xlbnwwfHwwfHw%3D&);
+        --abstract: url(https://images.unsplash.com/photo-1510906594845-bc082582c8cc)
+    }
+    body {
+      background-color: transparent;
+      /*
+        background: rgb(48,4,4);
+        background: linear-gradient(90deg, #300404 0%, #060937 33%, #30042f 66%, #300404 100%);
+        background-image: var(--abstract);
+        background-size: 100%;
+        background-attachment: fixed;
+        backdrop-filter: blur(5px);
+        background-size: 200% auto;
+        animation: shine 5s linear infinite;*/
+    }
+    ::selection {
+        background-color: rgba(255, 0, 255, 0.24);
+        color: black;
+    }
+    .bottom {
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        width: 50%;
+        border-image: var(--text-grad) 10;
+        animation: shine 1s reverse infinite;
+    }
+    #banner {
+        z-index: 1000;
+        text-align: center;
+        font-size: 20pt;
+        font-family: 'Luckiest Guy';
+        background: var(--text-grad);
+        background-size: 200% auto;
+        color: #000;
+        background-clip: text;
+        text-fill-color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: shine 1s linear infinite;
+    }
+    .game-link {
+        color: white;
+        border-radius: 5px;
+        backdrop-filter: blur(5px);
+        padding: 10px;
+        border: 1px solid;
+        z-index: 1;
+    }
+    .game-link:hover {
+        border-radius: 10px;
+        background: var(--button-grad);
+        background-size: 200% auto;
+        color: #000;
+        background-clip: text;
+        text-fill-color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: shine 5s reverse infinite;
+        border-image: var(--button-grad) 10;
+    }
+    .br {
+        border-color: transparent;
+        border-width: 10px;
+    }
+    #top-bar {
+        top: 0px;
+        text-align: center;
+        z-index: 999;
+    }
+    .descrip {
+        font-weight: bolder;
+        color: black;
+    }
+    #particles-js {
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        position: fixed;
+        background-color: #111;
+    }
+    #motto {
+        font-size: 20pt;
+        font-weight: bolder;
+        background: var(--text-grad);
+        background-size: 200% auto;
+        color: #000;
+        background-clip: text;
+        text-fill-color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: shine 10s linear infinite;
+    }
+    p, h2 {
+        font-family: 'Raleway', sans-serif;
+        background: var(--text-grad);
+        background-size: 200% auto;
+        color: #000;
+        background-clip: text;
+        text-fill-color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: shine 10s linear infinite;
+    }
+    #top-bar p {
+        font-size: 20pt;
+    }
+    #title {
+        font-family: 'Monoton', 'Luckiest Guy';
+        font-size: 45pt;
+        text-decoration: none;
+        background: var(--text-grad);
+        background-size: 200% auto;
+        color: #000;
+        background-clip: text;
+        text-fill-color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: shine 10s linear infinite;
+        z-index: 999;
+    }
+    a {
+        font-size: 15pt;
+        font-family: monospace;
+        text-decoration: none;
+    }
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+}
+</style>
+<script>
+    particlesJS("particles-js", {
+"particles": {
+"number": {
+  "value": 100,
+  "density": {
+    "enable": true,
+    "value_area": 800
+  }
+},
+"color": {
+  "value": "#ffffff"
+},
+"shape": {
+  "type": "circle",
+  "stroke": {
+    "width": 0,
+    "color": "#ffffff"
+  },
+  "polygon": {
+    "nb_sides": 5
+  },
+  "image": {
+    "src": "img/github.svg",
+    "width": 100,
+    "height": 100
+  }
+},
+"opacity": {
+  "value": 0.5,
+  "random": false,
+  "anim": {
+    "enable": false,
+    "speed": 1,
+    "opacity_min": 0.1,
+    "sync": false
+  }
+},
+"size": {
+  "value": 3,
+  "random": true,
+  "anim": {
+    "enable": false,
+    "speed": 40,
+    "size_min": 0.1,
+    "sync": false
+  }
+},
+"line_linked": {
+  "enable": true,
+  "distance": 150,
+  "color": "#101cc9",
+  "opacity": 0.4,
+  "width": 1
+},
+"move": {
+  "enable": true,
+  "speed": 2,
+  "direction": "none",
+  "random": false,
+  "straight": false,
+  "out_mode": "out",
+  "bounce": false,
+  "attract": {
+    "enable": false,
+    "rotateX": 600,
+    "rotateY": 1200
+  }
+}
+},
+"interactivity": {
+"detect_on": "canvas",
+"events": {
+  "onhover": {
+    "enable": true,
+    "mode": "grab"
+  },
+  "onclick": {
+    "enable": true,
+    "mode": "push"
+  },
+  "resize": true
+},
+"modes": {
+  "grab": {
+    "distance": 140,
+    "line_linked": {
+      "opacity": 1
+    }
+  },
+  "bubble": {
+    "distance": 400,
+    "size": 40,
+    "duration": 2,
+    "opacity": 8,
+    "speed": 3
+  },
+  "repulse": {
+    "distance": 200,
+    "duration": 0.4
+  },
+  "push": {
+    "particles_nb": 4
+  },
+  "remove": {
+    "particles_nb": 2
+  }
+}
+},
+"retina_detect": true
+});
+  </script>
+  <script>
+    function why() {
+      console.log("Dev > I'm so sorry, please forgive me");
+      console.log("Dev > It's 1:13am, I'm so tired");
+      console.log("Dev > Maybe I'll take nap tomorrow, probably not");
+      console.log("Dev > Wait, I just relized I was typing all this");
+      console.log("Dev > Have fun reading I guess");
+      console.log("Dev > If you have any suggestions email me: sup@blockedatschool.com");
+      console.log("Dev > Also email me if there's anything else I should know");
+      console.log("Dev > Or just to say hi");
+      console.log("Dev > im lonely");
+      console.log("Dev > lmao, I just relized how cringy me email is");
+      console.log("Dev > I guess I could change it...");
+      console.log("Dev > (I'm using cloudflare email routing to forward stuff to my actual address)");
+      console.log("Dev > I think I'll make a catch all address,");
+      console.log("Dev > Ok, you can email any address @blockedatschool.com");
+      console.log("Dev > (or @blocked-at-school.com)");
+    }
+  </script>
+</html>

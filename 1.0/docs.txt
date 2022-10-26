@@ -1,0 +1,6 @@
+https://www.digicert.com/kb/csr-ssl-installation/apache-openssl.htm
+https://dash.cloudflare.com/e065bd05f00ed97a12f5da2bea984ced/tsck.agency/ssl-tls/origin
+https://www.digicert.com/easy-csr/openssl.htm
+
+
+openssl req -new -newkey rsa:2048 -nodes -out startsck_agency.csr -keyout startsck_agency.key -subj "/C=US/ST=New Mexico/L=Santa Fe/O=Cedar DeLacy/CN=*tsck.agenc

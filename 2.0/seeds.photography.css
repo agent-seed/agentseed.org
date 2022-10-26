@@ -1,0 +1,110 @@
+:root {
+    --light: #FFF;
+    --dark: #000;
+    --tdark: rgba(0, 0, 0, 0.5);
+    --red: #F00;
+    --gray: #777777;
+  }
+p {
+    font-size: 15pt;
+    color:var(--light);
+    width: 50%;
+    font-family: 'Abel', sans-serif;
+    font-style:normal;
+    font-weight:lighter;
+    font-size: larger;
+    background-color:var(--tdark);
+     
+    padding: 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+h1 {
+    font-size: 25pt;
+    color: var(--light);
+    font-family: 'Cinzel', serif;
+    font-style: normal;
+    font-weight: bold;
+}
+body {
+    /*
+    background-image:url(https://tsck.agency/photography/photography-background.png);
+    */
+    background-color: var(--dark);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+button {
+    transition: 1s;
+    font-family: 'Abel', sans-serif;
+    font-style:normal;
+    font-weight:lighter;
+    padding: 10px;
+    font-size: large;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-style: solid;
+    border-width: 1px;
+    color: #777777;
+}
+button:hover {
+    border-color: var(--light);
+    color: var(--light);
+    text-shadow: 0 0 5px var(--light); 
+    box-shadow: 0 0 15px var(--light);
+}
+button:active {
+    border-color: var(--light);
+    color: var(--light);
+    text-shadow: 0 0 5px var(--light); 
+    box-shadow: 0 0 15px var(--light);
+}
+.link {
+    height: 40;
+    width: auto;
+    background-color: var(--tdark);
+    font-family: 'Cinzel', serif;
+    font-size: 10pt;
+    color: var(--light);
+    border-width: 3px;
+    border-style: inset;
+    border-color: var(--light);
+    font-style: normal;
+    font-weight: bold;
+    cursor:pointer;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+    
+.link:hover {
+    border-color: var(--light);
+    color: var(--light);
+    text-shadow: 0 0 5px var(--light); 
+    box-shadow: 0 0 15px var(--light);
+}
+
+.link:active {
+    border-style:outset;
+    border-color: var(--gray);
+    color: var(--gray);
+    text-shadow: 0 0 5px var(--light); 
+    box-shadow: 0 0 15px var(--light);
+}
+.license {
+    font-size: large;
+    color: var(--light);
+    width: 100%;
+    font-family: 'Abel', sans-serif;
+    font-style:normal;
+    font-weight:lighter;
+    background-color:var(--tdark);
+     
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    width: fit-content;
+    padding: 10px;
+}

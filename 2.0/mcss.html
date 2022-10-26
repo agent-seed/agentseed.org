@@ -1,0 +1,158 @@
+<html>
+<!-- I stole this code from https://123computer.net, sorry! -->
+<head>
+    <!--Website design Nathaniel Hofer 2020 | Copyright 2020 123computer | Site design "Cards 1.2" by 123computer-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Minecraft Server Status</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-wwwwd" content="ie=edge">
+    <meta name="description" content="The unofficial website for Minecraft Server Status, the easy to use server status bot for Discord">
+    <meta name="keywords" content="Minecraft Server Status, Discord Bot, 123computer, Minecraft, discord bot, MCSS, free discord bot, easy minecraft server bot, MC server status">
+    <!-- <link rel="icon" type="image/png" href="http://www.example.com/image.png">Major Browsers -->
+    <!--[if IE]><link rel="SHORTCUT ICON" href="http://www.example.com/alternateimage.ico"/><![endif]-->
+    <!-- Internet Explorer-->
+    <link rel="icon" type="image/png" href="https://123computer.net/images/icon.png" />
+    
+    
+    <link rel="stylesheet" href="https://123computer.net/css/discordInvite.css" type="text/css" media="screen" />
+    <style id="styles">
+    </style>
+    <link href="https://123computer.net/mcss/css/main.css" rel="stylesheet"/>
+    <style>
+        
+    </style>
+</head>
+<a href="/">
+    <div class="back2">
+        <img class="discordimg" src="https://123computer.net/images/123.png"><flsemobilehide> 123computer</flsemobilehide>
+    </div>
+    </a>
+<a href="changelog">
+    <div class="back3">
+        Changelog
+    </div>
+    </a>
+    <a href="https://discordapp.com/oauth2/authorize?client_id=652726107535310859&permissions=16&scope=bot">
+        <div class="atd">
+            <img class="discordimg" src="https://123computer.net/mcss/img/discord.svg"><flsemobilehide> Add to Discord</flsemobilehide><flsemobileonly> Add Bot</flsemobileonly>
+        </div>
+        </a>
+
+
+<body>
+    
+    <center>
+        
+        <div class="content">
+            <img alt="Minecraft Server Status Discord Bot Logo" class="headimg" width="250em" style="filter: drop-shadow(2px 2px 4px #222); " src="https://123computer.net/images/icon.png">
+            <h2 style="margin-bottom:5px;">Minecraft Server Status</h2>
+            <flsemobilehide><h3 style="margin-left: 7.5%; margin-right: 7.5%; font-size: 28px; margin-top:7.5px;">Minecraft Server Status is a Discord bot that can ping both Java and Bedrock Edition Minecraft servers. Get information about the status of your favorite servers with a simple command.</h3></flsemobilehide>
+            <flsemobileonly><h3 style="margin-left: 5%; margin-right: 5%; font-size: 18px; margin-top:7.5px;">Minecraft Server Status is a Discord bot that can ping both Java and Bedrock Edition Minecraft servers. Get information about the status of your favorite servers with a simple command.</h3></flsemobileonly>
+
+            
+<div style="margin-top:10px; margin-bottom:15px;" id="discordInviteBox"></div>
+<br>
+<img style="filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.5));" src="https://top.gg/api/widget/status/652726107535310859.svg" alt="Minecraft Server Status" />
+<img style="filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.5));" src="https://top.gg/api/widget/servers/652726107535310859.svg" alt="Minecraft Server Status" />
+            <br>
+
+
+
+
+            <h3>Easy to use commands</h3>
+            <div style="margin-top:15px;" class="card">
+                <div class="container">
+                    <h4><b>Change the bot's prefix in your guild</b></h4>
+                    <pre><code>m/ save prefix [your prefix]</code></pre>
+
+
+                </div>
+            </div>
+
+            <div style="margin-top:15px;" class="card">
+                <div class="container">
+                    <h4><b>Send an automatically refreshing message</b></h4>
+                    <pre><code>m/ automsg</code></pre>
+
+
+
+                </div>
+            </div>
+
+            <div style="margin-top:15px;" class="card">
+                <div class="container">
+                    <h4><b>Check the status of a saved server</b></h4>
+                    <pre><code>m/ check</code></pre>
+
+
+
+                </div>
+            </div>
+
+            <div style="margin-top:15px;" class="card">
+                <div class="container">
+                    <h4><b>Check Java Edition server:</b></h4>
+                    <pre><code>m/ status [Server IP] [Optional Port]</code></pre>
+                    <p>Correct usage:<br>
+                    <pre><code>m/ status mc.hypixel.net 25565
+
+m/ status mc.hypixel.net:25565</code></pre>
+                </div>
+            </div>
+            <div class="card">
+                <div class="container">
+                    <h4><b>Bedrock Edition server:</b></h4>
+                    <pre><code>m/ bedrock [Server IP] [Optional Port]</code></pre>
+                    <p>Correct usage:<br>
+                    <pre><code>m/ bedrock 142.44.169.167 2087
+
+m/ bedrock 142.44.169.167:2087</code></pre>
+                </div>
+            </div>
+            <div class="card">
+                <div class="container">
+                    <h4><b>Add a server to the database (one per guild)</b></h4>
+                    <pre><code>m/ save server [type] [server ip] [optional port]</code></pre>
+                    <p>Correct usage:<br>
+                    <pre><code>m/ save server bedrock 142.44.169.167:2087
+
+m/ save server java mc.hypixel.net</code></pre>
+                    <h6>Remember to put a space in between m/ and the command. Either a space or a colon can be used to specify the port number. The port number is only required when the default (25565 for Java and 19132 for Bedrock) is not used.</h6>
+                </div>
+            </div>
+            <h3>Frequently Asked Questions</h3>
+            <div style="margin-top:15px; margin-bottom:0px;" class="card">
+                <div class="container">
+                    <h4><b>Can the bot check the status of realms?</b></h4>
+                    <p>No, the bot can only be used to check traditional hosted Minecraft servers. Support for realms is being looked into, but is not guaranteed to be added.</p>
+                    <hr class="beautiful-line">
+                    <h4><b>Why does the bot need Manage Channels permission?</b></h4>
+                    <p>The next major update currently in development will allow you to use the names of voice channels to display information live in the sidebar of your server. The invite requests this permission in anticipation of this update. Denying the bot this permission will not affect its functionality at this time.</p>
+                    <hr class="beautiful-line">
+                    <h4><b>What does the bot store? "Privacy Policy"</b></h4>
+                    <p>The bot stores the commands issued to it for debugging purposes, and this data is not retained unless neccessary (in the case that it causes a crash.) If you choose to use the saved server option, the bot will store the ID of your Discord server and the IP and type of your Minecraft server. No data stored by the bot will be sold or transferred to any other party.
+                </div>
+            </div>
+        </div>
+        
+    </center>
+   
+    <script src="https://123computer.net/js.js"></script>
+    <script>
+        discordInvite.init({
+            inviteCode: 'szr7VgVxzQ',
+            title: 'Support Server',
+            introText: 'Join the Support Server:',
+        });
+        discordInvite.render();
+
+    </script>
+    <script src="https://123computer.net/mcss/flse/global.js"></script>
+    <script src="https://123computer.net/mcss/flse/flse.js"></script>
+    <center>
+        <footer style="margin-top:0px; text-shadow: 0px 0px 0px #000000;">Copyright 2021 <a style="font-size:15px;" href="https://123computer.net/"> 123computer.net</a> - Screenshot taken on Fox Village. Play today on Minecraft Java Edition with IP play.foxvillage.net</footer>
+    </center>
+
+</body>
+</html>

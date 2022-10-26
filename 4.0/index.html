@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<header>
+  <title>Agentseed's website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://agentseed.org/particles.js/particles.min.js"></script>
+    <link rel="stylesheet" href="/fonts/stylesheet.css" type="text/css" charset="utf-8" />
+</header>
+<body>
+<div id="top-bar">
+    <p id="logo">A</p>
+    <a href="/">Home</a>
+    <a href="/aboutme">About me</a>
+    <a href="/blog">Blog</a>
+    <a href="/projects">Projects</a>
+    <a href="https://seeds.photography">Photography</a>
+    <a href="/contact">Contact me</a>
+</div>
+<div  id="particles-js" class="title-image" style="background-image: url(https://agentseed.org/imgs/code3.jpg);"></div>
+<div id="title-wrapper"><h1 id="title">Agentseed</h1></div>
+<div class="about">
+    <h2>Pages</h2>
+    <a href="/clock" id="no-link">
+    <div class="about-link">
+    <h2>Clock</h2>
+    <p>Simple 24-hour javascript clock with an animated gradient background and dark mode</p>
+    </div></a>
+    <br>
+    <a href="/christmas" id="no-link">
+    <div class="about-link">
+    <h2>Christmas</h2>
+    <p>Simple Christmas countdown using the same styling as the clock</p>
+    </div></a>
+    <br>
+    <a href="/games" id="no-link">
+    <div class="about-link">
+    <h2>Games</h2>
+    <p>A collection of games that aren't blocked, completly ad-free</p>
+    </div></a>
+    <br>
+    <a href="/mc" id="no-link">
+    <div class="about-link">
+    <h2>Minecraft server</h2>
+    <p>I have a Minecraft server, this page includes a link to the Discord server and the ip address of the server</p>
+    </div></a>
+</body>
+<script>
+        particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 100,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 6,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "grab"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 140,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+      </script>

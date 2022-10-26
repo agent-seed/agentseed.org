@@ -1,0 +1,28 @@
+<canvas class="title-image"></canvas>
+<script src="https://agentseed.org/scripts/particles.min.js"></script>
+    <script>
+        window.onload = function() {
+        Particles.init({
+          selector: '.title-image',
+          connectParticles: 'true',
+          color: '#ffffff',
+          speed: '0.5'
+        });
+      }; 
+      </script>
+      <style>
+        body {
+            background-color: #333;
+        }
+        .title-image {
+    position: static;
+    background-image: url(mc.png);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 1000px;
+    width: 100%;
+    display: block;
+    z-index: 1;
+    border: 0px;
+}
+      </style>

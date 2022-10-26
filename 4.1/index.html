@@ -1,0 +1,120 @@
+<div id="top-bar">
+    <a id="logo">A</a>
+    <a href="/">Home</a>
+    <a href="/aboutme">About me</a>
+    <a href="/linktree">Linktree</a>
+    <a href="/projects">Projects</a>
+    <a href="https://blockedatschool.com">Games</a>
+    <a href="/contact">Contact me</a>
+    
+</div>
+<hr class="colorful">
+<style>
+    :root{
+        --font-color: white; /* var(--font-color) */
+        --accent-color: rgb(255, 65, 198); /* var(--accent-color) */
+        --background-color: #333; /* var(--background-color) */
+        --default-font: 'Raleway', sans-serif; /* var(--default-font) */
+        --title-font: 'Playfair Display', serif; /* var(--title-font) */
+        --ellipsis: "...";
+        --panel-color:  rgb(44, 44, 44); /* var(--panel-color) */
+        --logo-font: 'canterburyregular', serif; /* var(--logo-font) */
+        --accent2: rgb(29, 29, 29); /* var(--accent2) */
+        --grad: linear-gradient(90deg, #c7e51c, #ee7752, #e73c7e, #c64ebc, #23a6d5, #23d5ab, #c7e51c);
+        --text-grad: linear-gradient(90deg, #e91616 0%, #101cc9 25%, #0fe029 50%, #0f1ce0 75%, #ff0000 100%);
+        --dark-grad: linear-gradient(90deg, rgba(12,13,38,1) 0%, rgba(4,25,37,1) 50%, rgba(4,27,21,1) 100%);
+        --pink-grad: linear-gradient(90deg, rgba(117,0,255,1) 0%, rgba(255,0,80,1) 50%, rgba(255,0,230,1) 100%);
+        --rad-grad: radial-gradient(at 72% 6%, hsla(201,97%,53%,1) 0px, transparent 50%), radial-gradient(at 19% 79%, hsla(348,91%,61%,1) 0px, transparent 50%), radial-gradient(at 11% 15%, hsla(287,91%,61%,1) 0px, transparent 50%), radial-gradient(at 80% 77%, hsla(266,67%,39%,1) 0px, transparent 50%);
+    }
+    #top-bar {
+        background: var(--dark-grad);
+        color: white;
+        padding: 10px;
+        position: sticky;
+        background-size: 400%;
+        animation: 5s linear 1s infinite alternate ani;
+    }
+    #top-bar a {
+        background: var(--pink-grad);
+        background-size: 100%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 14pt;
+        font-family: 'Open Sans';
+    }
+    #top-bar a:hover {
+        background-size: 400%;
+        animation: 1s linear 1s infinite alternate ani;
+        text-decoration: underline;
+        text-decoration-color: white;
+    }
+    #top-bar #logo{
+        margin-right: 30px;
+        height: auto;
+        transition: 1s;
+        position: relative;
+        display: inline;
+        padding: 0;
+        font-family: 'canterbury';
+        font-size: 50pt;
+        background: var(--rad-grad);
+        background-size: 400% auto;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: 5s linear 1s infinite alternate hor;
+        cursor: pointer;
+    }
+    #top-bar #logo {
+        text-decoration: none;
+    }
+    .colorful {
+        border-image: var(--grad) 10;
+    }
+
+
+
+@-webkit-keyframes ani {
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
+}
+@-moz-keyframes ani {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes ani {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes ani {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-webkit-keyframes hor {
+    0%{background-position:11% 0%}
+    50%{background-position:90% 100%}
+    100%{background-position:11% 0%}
+}
+@-moz-keyframes hor {
+    0%{background-position:11% 0%}
+    50%{background-position:90% 100%}
+    100%{background-position:11% 0%}
+}
+@-o-keyframes hor {
+    0%{background-position:11% 0%}
+    50%{background-position:90% 100%}
+    100%{background-position:11% 0%}
+}
+@keyframes hor {
+    0%{background-position:11% 0%}
+    50%{background-position:90% 100%}
+    100%{background-position:11% 0%}
+}
+</style>

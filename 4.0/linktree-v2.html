@@ -1,0 +1,316 @@
+<!doctype html>
+<html>
+<head>
+<title>Agentseed / Cedar DeLacy - Agentseed.org</title>
+<link rel="favicon" type="image/png" href="https://agentseed.org/agent-lines.png">
+<link rel="icon" type="image/png" href="https://agentseed.org/agent-lines.png">
+<meta name="description" content="Agentseed's linktree">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.cdnfonts.com/css/led-digital-7" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nixie+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@500&display=swap" rel="stylesheet"> 
+<script src="https://agentseed.org/particles.js/particles.min.js"></script>
+</head>
+<body>
+        <div class="main">
+            <img src="https://agentseed.org/agent-lines.png" onclick="changeImage()" class="pfp" id="pfp">
+            <h1>Cedar DeLacy</h1>
+            <p>I code, game, take pictures and play music.</p>
+            <hr>
+                <a href="https://agentseed.org" class="button">Website</a>
+                <br>
+                <a href="https://agentseed.org/blog" class="button">Blog</a>
+                <br>
+                <a href="https://agentseed.org/mc" class="button">Minecraft server</a>
+                <br>
+                <a href="https://seeds.photography" class="button">Photos</a>
+                <br>
+                <a href="https://discord.gg/mSqhcyhAn2" class="button">Discord server</a>
+                <br>
+                <a href="https://steamcommunity.com/id/Agentseed" class="button">Steam</a>
+                <br>
+                <a href="https://github.com/agent-seed" class="button">Github</a>
+                <br>
+            <hr>
+            <p class="bottom-text">
+                <a href="https://instagram.com/agentseed"><img class="social" src="https://agentseed.org/linktree/icons/insta.png"></a>
+                <a href="https://reddit.com/r/Agentseed"><img class="social" src="https://agentseed.org/linktree/icons/reddit.png"></a>
+                <a href="https://snapchat.com/add/agentseed"><img class="social" src="https://agentseed.org/linktree/icons/snap.png"></a>
+                <a href="https://tiktok.com/@agentseed"><img class="social" src="https://agentseed.org/linktree/icons/tiktok.png"></a>
+                <a href="https://twitter.com/CedarDeLacy"><img class="social" src="https://agentseed.org/linktree/icons/twitter.png"></a>
+                <a href="https://www.youtube.com/channel/UCw8HZ5foyu-3OvZ64G_yowA"><img class="social" src="https://agentseed.org/linktree/icons/youtube.png"></a>
+            </p>
+        </div>
+         <script src="https://jzxkdj4k1hd8.statuspage.io/embed/script.js"></script>
+         <div class="canvas" id="particles-js"></div>
+</body>
+<style>
+    :root{
+        --font: 'Nixie One', 'LED Digital 7', monospace, sans-serif;
+        --font2: monospace;
+        --background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(11,0,25,1) 50%, rgba(32,0,65,1) 100%);
+        --text-c: black;
+        --background-c: white;
+      }
+      ::-webkit-scrollbar{
+        background-color: transparent;
+        mix-blend-mode: screen;
+        width: 10px;
+      }
+      ::-webkit-scrollbar-thumb {
+        border-color: white;
+        border-width: 1px;
+        border-style: solid;
+        background-color: var(--background);
+      }
+      .canvas {
+        position: fixed;
+        background-attachment: fixed;
+        background-position: top;
+        background-repeat: repeat;
+        background-size: 400%;
+	      animation: gradient 10s ease infinite;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+    .social {
+        width: 100px;
+        height: 100px;
+        mix-blend-mode: normal;
+        transition: 1s;
+    }
+    .social:hover {
+        transform: translateY(10px);
+        transition: 1s;
+    }
+    .social:active {
+        transform: translateY(20px);
+        transition: 0.5s;
+    }
+    hr {
+        border-style: none none solid none;
+        border-width: 2px;
+        border-color: white;
+        box-shadow: #000000 -2px 2px 5px;
+    }
+    .pfp {
+        border-width: 2px;
+        border-style: solid;
+        border-image: linear-gradient(#13169d, #b51396 30);
+        mix-blend-mode: screen;
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+        transition: 1s;
+        
+      }
+    .pfp:active {
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        transition: 1s;
+    }
+    .bottom-text {
+        font-size: xx-large;
+        font-family: var(--font);
+    }
+    body {
+        background: black;
+        background-image: var(--background);
+        background-repeat: repeat;
+        color: var(--text-c);
+        font-family: var(--font);
+    }
+    
+    .main {
+        mix-blend-mode: normal;
+        margin: auto;
+        display: block;
+        background-color: transparent;
+        border-style: solid;
+        border-color: transparent;
+        border-width: 1px;
+        border-radius: 10px;
+        font-size: xx-large;
+        width: fit-content;
+        padding: 20px;
+        text-align: center;
+        color: white;
+    }
+    .main p{
+        font-family: var(--font);
+        font-weight: normal;
+        text-shadow: #000000 -2px 2px 5px;
+    }
+    .main h1{
+        text-decoration: none;
+        text-decoration-thickness: 3px;
+        font-size: 40pt;
+        text-shadow: #000000 -2px 2px 5px;
+    }
+    .button {
+        background-color: transparent;
+        border-style: solid;
+        border-color: transparent;
+        color: white;
+        font-size: x-large;
+        font-family: var(--font);
+        font-weight: 900;
+        text-decoration: none;
+        transition: 1s;
+        text-shadow: #000000 -2px 2px 5px;
+    }
+    .button:hover {
+        /* border-style: none solid solid solid; */
+        border-style: solid;
+        border-radius: 0px;
+        text-decoration: underline;
+        transition: 1s;
+    }
+    .button:active {
+        border-color: white;
+        transition: 1s;
+    }
+    @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+</style>
+<script>
+function changeImage() {
+    if (document.getElementById("pfp").src == "https://agentseed.org/agent-lines.png"){
+        document.getElementById("pfp").src = "https://agentseed.org/imgs/gigachad.jpg";
+    } else {
+        document.getElementById("pfp").src = "https://agentseed.org/agent-lines.png";
+    }
+}
+</script>
+<script>
+    particlesJS("particles-js", {
+"particles": {
+"number": {
+  "value": 100,
+  "density": {
+    "enable": true,
+    "value_area": 800
+  }
+},
+"color": {
+  "value": "#ffffff"
+},
+"shape": {
+  "type": "circle",
+  "stroke": {
+    "width": 0,
+    "color": "#000000"
+  },
+  "polygon": {
+    "nb_sides": 5
+  },
+  "image": {
+    "src": "img/github.svg",
+    "width": 100,
+    "height": 100
+  }
+},
+"opacity": {
+  "value": 0.5,
+  "random": false,
+  "anim": {
+    "enable": false,
+    "speed": 1,
+    "opacity_min": 0.1,
+    "sync": false
+  }
+},
+"size": {
+  "value": 3,
+  "random": true,
+  "anim": {
+    "enable": false,
+    "speed": 40,
+    "size_min": 0.1,
+    "sync": false
+  }
+},
+"line_linked": {
+  "enable": true,
+  "distance": 150,
+  "color": "#ffffff",
+  "opacity": 0.4,
+  "width": 1
+},
+"move": {
+  "enable": true,
+  "speed": 2,
+  "direction": "none",
+  "random": false,
+  "straight": false,
+  "out_mode": "out",
+  "bounce": false,
+  "attract": {
+    "enable": false,
+    "rotateX": 600,
+    "rotateY": 1200
+  }
+}
+},
+"interactivity": {
+"detect_on": "canvas",
+"events": {
+  "onhover": {
+    "enable": true,
+    "mode": "grab"
+  },
+  "onclick": {
+    "enable": true,
+    "mode": "push"
+  },
+  "resize": true
+},
+"modes": {
+  "grab": {
+    "distance": 140,
+    "line_linked": {
+      "opacity": 1
+    }
+  },
+  "bubble": {
+    "distance": 400,
+    "size": 40,
+    "duration": 2,
+    "opacity": 8,
+    "speed": 3
+  },
+  "repulse": {
+    "distance": 200,
+    "duration": 0.4
+  },
+  "push": {
+    "particles_nb": 4
+  },
+  "remove": {
+    "particles_nb": 2
+  }
+}
+},
+"retina_detect": true
+});
+  </script>
+  
+</html>

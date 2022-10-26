@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<audio src="https://nmsa-art.com/audio/Minecraft.mp3" loop autoplay></audio>
+<title>New Tab</title>
+<body onload="startTime()">
+    <div class="clock">
+        <p style="font-size: medium;">Time:</p>
+        <p id="clock"></p>
+    </div>
+    <div class="parent">
+        <div class="div">
+            <a href="https://www.google.com">
+                <img src="https://nmsa-art.com/imgs/google-logo.png"></a>
+            <a href="https://www.duckduckgo.com">
+                <img src="https://nmsa-art.com/imgs/duckduckgo-logo.svg"></a>
+        </div>
+    </div>
+<footer>
+    <a href="https://www.youtube.com">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg"></a>
+
+    <a href="https://mail.gooogle.com">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg"></a>
+
+    <a href="https://xkcd.com">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/51qKVpRPnDL.png"></a>
+
+    <a href="https://disneyplus.com">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg"></a>
+      
+    <a href="https://hbomax.com">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/HBO_logo.svg" style="filter: invert(100%);"></a>
+      
+    <a href="https://netflix.com">
+        <img  src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/227_Netflix_logo-512.png"></a>
+      
+    <a href="https://wikipedia.org">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Wikipedia-logo-v2.svg"></a>
+                  
+</footer>
+<style>
+    .clock{
+        position: fixed;
+        padding: 20px;
+        font-size: xx-large;
+        background-color: rgba(0, 0, 0, 0.37);
+        border-radius: 30px;
+        backdrop-filter: blur(5px);
+        color: white;
+        text-align: center;
+    }
+    .div{
+        position: fixed;
+        top: 30%;
+        padding: 20px;
+        max-width: fit-content;
+        background-color: rgba(0, 0, 0, 0.37);
+        border-radius: 30px;
+        backdrop-filter: blur(5px);
+    }
+    body{
+        background-image: url(https://nmsa-art.com/imgs/black-leaves.jpeg);
+        background-size: 100%;
+        background-attachment: fixed;
+    }
+    .parent{
+        display: flex;
+        justify-items: center;
+        justify-content: center;
+        vertical-align: middle;
+        margin: auto;
+    }
+    img{
+        height: 200px;
+        filter: saturate(0%);
+        transition: 0.7s;
+    }
+    img:hover{
+        filter: saturate(100%);
+        transition: 0.7s;
+    }
+    footer{
+        position: fixed;
+        bottom: 0px;
+        display: flex;
+        justify-items: center;
+        justify-content: center;
+        vertical-align: bottom;
+        margin: auto;
+        background-color: rgba(0, 0, 0, 0.37);
+        border-radius: 30px;
+        backdrop-filter: blur(5px);
+        width: 100%;
+    }
+    footer img{
+        height: 75px;
+        padding: 20px;
+    }
+</style>
+<script>
+    function startTime() {
+      const today = new Date();
+      let h = today.getHours();
+      let m = today.getMinutes();
+      let s = today.getSeconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById('clock').innerHTML =  h + ":" + m + ":" +s;
+      setTimeout(startTime, 1000);
+      console.log(h + ":" + m + ":" + s);
+    }
+    
+    function checkTime(i) {
+      if (i < 10) {i = "0" + i};
+      return i;
+    }
+</script>
+</body>
+</html>
