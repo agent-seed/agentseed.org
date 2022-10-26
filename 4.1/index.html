@@ -9,6 +9,15 @@
     
 </div>
 <hr class="colorful">
+<div class="header-image">
+<h1>Agentseed</h1>
+</div>
+<hr class="colorful">
+<div class="about">
+    <h2>About me</h2>
+     <img class="pfp" src="https://agentseed.org/imgs/logo-lines.png">
+
+</div>
 <style>
     :root{
         --font-color: white; /* var(--font-color) */
@@ -74,8 +83,14 @@
     .colorful {
         border-image: var(--grad) 10;
     }
-
-
+    .about .pfp {
+        position: static;
+        left: 20px;
+        border-radius: 50%;
+    }
+    .about .bio {
+        display: inline-block;
+    }
 
 @-webkit-keyframes ani {
 0%{background-position:0% 50%}
