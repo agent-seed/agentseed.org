@@ -16,7 +16,10 @@
 <div class="about">
     <h2>About me</h2>
      <img class="pfp" src="https://agentseed.org/imgs/logo-lines.png">
-
+    <div class="bio">
+        <h3>me</h3>
+        <p>text</p>
+    </div>
 </div>
 <style>
     :root{
@@ -82,16 +85,36 @@
     }
     .colorful {
         border-image: var(--grad) 10;
+        border-style: none none solid none;
+        border-width: 2px;
     }
     .about .pfp {
-        position: static;
-        left: 20px;
+        position: absolute;
+        left: 40px;
         border-radius: 50%;
-        width: 40px;
-        
+        width: 200px;
+
     }
     .about .bio {
         display: inline-block;
+        right: 40px;
+        position: absolute;
+    }
+    .about h2 {
+        font-size: 20pt;
+        text-align: center;
+    }
+    .header-image  {
+        text-align: center;
+        height: max-content;
+        background-size: 100%;
+        background-image: url(https://images.unsplash.com/photo-1666112835156-c65bb806ac73?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1760&q=80);
+    }
+    html {
+        background-image: var(--dark-grad);
+        background-size: 400%;
+        animation: 5s linear 1s infinite alternate hor;
+        color: white;
     }
 
 @-webkit-keyframes ani {
