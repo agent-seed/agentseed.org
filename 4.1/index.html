@@ -1,3 +1,4 @@
+<body>
 <div id="top-bar">
     <a id="logo">A</a>
     <a href="/">Home</a>
@@ -15,6 +16,7 @@
 </div>
 </div>
 <hr class="colorful">
+
 <div class="about">
     <h2>About me</h2>
      <img class="pfp" src="https://agentseed.org/imgs/logo-lines.png">
@@ -23,10 +25,14 @@
         <p>text</p>
     </div>
 </div>
+
+
+</body>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Nixie+One&display=swap');
     :root{
+        --debug: unset; 
         --font-color: white; /* var(--font-color) */
         --accent-color: rgb(255, 65, 198); /* var(--accent-color) */
         --background-color: #333; /* var(--background-color) */
@@ -41,9 +47,11 @@
         --dark-grad: linear-gradient(90deg, rgba(12,13,38,1) 0%, rgba(4,25,37,1) 50%, rgba(4,27,21,1) 100%);
         --pink-grad: linear-gradient(90deg, rgba(117,0,255,1) 0%, rgba(255,0,80,1) 50%, rgba(255,0,230,1) 100%);
         --rad-grad: radial-gradient(at 72% 6%, hsla(201,97%,53%,1) 0px, transparent 50%), radial-gradient(at 19% 79%, hsla(348,91%,61%,1) 0px, transparent 50%), radial-gradient(at 11% 15%, hsla(287,91%,61%,1) 0px, transparent 50%), radial-gradient(at 80% 77%, hsla(266,67%,39%,1) 0px, transparent 50%);
+        --blue-grad: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 36%, rgba(0,212,255,1) 100%);
+        --dark-blue-grad: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(0, 0, 22) 100%);
     }
     #top-bar {
-        background: var(--dark-grad);
+        background: transparent;
         color: white;
         padding: 10px;
         position: sticky;
@@ -76,24 +84,30 @@
         padding: 0;
         font-family: 'canterbury';
         font-size: 50pt;
-        background: var(--rad-grad);
+        background: var(--blue-grad);
         background-size: 400% auto;
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation: 5s linear 1s infinite alternate hor;
+        animation: 5s linear 1s infinite alternate ani;
         cursor: pointer;
     }
     #top-bar #logo {
         text-decoration: none;
     }
     .colorful {
-        border-image: var(--grad) 10;
+        border-image: var(--blue-grad) 10;
         border-style: none none solid none;
         border-width: 2px;
     }
+    .about {
+        backdrop-filter: brightness(10%), blur(10px);
+        border: var(--debug);
+        height: auto;
+        padding-bottom: 40px;
+    }
     .about .pfp {
-        position: absolute;
+        position: relative;
         left: 40px;
         border-radius: 50%;
         width: 200px;
@@ -113,6 +127,7 @@
         font-weight: normal;
         letter-spacing: 40px;
         transition: 0.7s;
+        border: var(--debug)
     }
     h1:hover {
         letter-spacing: normal;
@@ -121,23 +136,35 @@
         letter-spacing: 0px;
     }
     .title {
-        position: absolute;
+        position: fixed;
         left: 50%;
-        top: 70%;
+        top: 50%;
         transform: translate(-50%, -50%);
         font-size: 40pt;
+        border: var(--debug)
     }
     .header-image  {
         text-align: center;
         height: 900px;
         background-size: 100%;
-        background-image: url(https://www.agentseed.org/imgs/img19.jpg);
+        background-image: url(https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+        background-attachment: fixed;
     }
-    html {
-        background-image: var(--dark-grad);
-        background-size: 400%;
-        animation: 5s linear 1s infinite alternate hor;
+    body {
+        background-image: url(1.png);
+        background-size: cover;
+        background-attachment: fixed;
+        /*animation: 5s linear 1s infinite alternate hor;*/
         color: white;
+        font-family: 'Nixie One', 'Playfair Display SC', serif;
+        backdrop-filter: brightness(10%);
+        width: 100%;
+        left: 0px;
+        top: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        
     }
 
 @-webkit-keyframes ani {
@@ -181,3 +208,13 @@
     100%{background-position:11% 0%}
 }
 </style>
+<script>
+    function debug() {
+        let root = document.documentElement;
+        root.style.setProperty('--debug', "2px red dashed");
+    }
+    function undebug() {
+        let root = document.documentElement;
+        root.style.setProperty('--debug', "unset");
+    }
+</script>
