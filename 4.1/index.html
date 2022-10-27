@@ -10,7 +10,9 @@
 </div>
 <hr class="colorful">
 <div class="header-image">
-<h1>Agentseed</h1>
+<div class="title">
+<h1>Agentsee<span class="line">d_</span></h1>
+</div>
 </div>
 <hr class="colorful">
 <div class="about">
@@ -22,6 +24,8 @@
     </div>
 </div>
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Nixie+One&display=swap');
     :root{
         --font-color: white; /* var(--font-color) */
         --accent-color: rgb(255, 65, 198); /* var(--accent-color) */
@@ -104,11 +108,30 @@
         font-size: 20pt;
         text-align: center;
     }
+    h1 {
+        font-family: 'Nixie One', 'Playfair Display SC', serif;
+        font-weight: normal;
+        letter-spacing: 40px;
+        transition: 0.7s;
+    }
+    h1:hover {
+        letter-spacing: normal;
+    }
+    .line {
+        letter-spacing: 0px;
+    }
+    .title {
+        position: absolute;
+        left: 50%;
+        top: 70%;
+        transform: translate(-50%, -50%);
+        font-size: 40pt;
+    }
     .header-image  {
         text-align: center;
-        height: max-content;
+        height: 900px;
         background-size: 100%;
-        background-image: url(https://images.unsplash.com/photo-1666112835156-c65bb806ac73?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1760&q=80);
+        background-image: url(https://www.agentseed.org/imgs/img19.jpg);
     }
     html {
         background-image: var(--dark-grad);
