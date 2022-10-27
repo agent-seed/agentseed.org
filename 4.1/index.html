@@ -14,7 +14,7 @@
 <div class="header-image">
 <div class="title">
 <a href="https://agentseed.org/linktree" style="text-decoration: none;">
-<h1>Agentsee<span class="line">d_</span></h1>
+<h1>Agentsee<span class="line">d<span>_</span></span></h1>
 </a>
 </div>
 </div>
@@ -33,12 +33,20 @@
 <div class="header-image" style="background-image: url(2.png);">
 <div class="title1">
 <a href="https://agentseed.org/sitemap">
-<h1>Page<span class="line">s_</span></h1>
+    <h1>Page<span class="line">s<span>_</span></span></h1>
 </a>
 </div>
 </div>
 <hr class="colorful">
 
+<div class="about">
+    <h2>Pages</h2>
+     <img class="pfp" src="https://agentseed.org/imgs/logo-lines.png">
+    <div class="bio">
+        <h3>Cedar DeLacy</h3>
+        <p>I do things sometimes, sometimes I don't do things</p>
+    </div>
+</div>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Nixie+One&display=swap');
@@ -73,7 +81,7 @@
     #top-bar a {
         border: var(--debug);
         background: var(--pink-grad);
-        background-size: 100%;
+        background-size: cover;
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -167,6 +175,11 @@
     .line {
         border: var(--debug);
         letter-spacing: 0px;
+        
+    }
+    .line span {
+        color: blue;
+        border: var(--debug);
     }
     .title {
         left: 50%;
@@ -185,10 +198,12 @@
         border: var(--debug)
     }
     .title a {
+        border: var(--debug);
         text-decoration: none;
         text-decoration-color: transparent;
     }
     .title1 a {
+        border: var(--debug);
         text-decoration: none;
         text-decoration-color: transparent;
     }
@@ -196,11 +211,12 @@
         border: var(--debug);
         text-align: center;
         height: 900px;
-        background-size: 100%;
+        background-size: cover;
         background-image: url(https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
         background-attachment: fixed;
     }
     body {
+
         background-image: url(1.png);
         background-size: cover;
         background-attachment: fixed;
