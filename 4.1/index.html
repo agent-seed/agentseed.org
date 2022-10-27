@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <body>
 <div id="top-bar">
     <a id="logo">A</a>
@@ -12,7 +13,9 @@
 <hr class="colorful">
 <div class="header-image">
 <div class="title">
+<a href="https://agentseed.org/linktree" style="text-decoration: none;">
 <h1>Agentsee<span class="line">d_</span></h1>
+</a>
 </div>
 </div>
 <hr class="colorful">
@@ -21,13 +24,21 @@
     <h2>About me</h2>
      <img class="pfp" src="https://agentseed.org/imgs/logo-lines.png">
     <div class="bio">
-        <h3>me</h3>
-        <p>text</p>
+        <h3>Cedar DeLacy</h3>
+        <p>I do things sometimes, sometimes I don't do things</p>
     </div>
 </div>
 
+<hr class="colorful">
+<div class="header-image" style="background-image: url(2.png);">
+<div class="title1">
+<a href="https://agentseed.org/sitemap">
+<h1>Page<span class="line">s_</span></h1>
+</a>
+</div>
+</div>
+<hr class="colorful">
 
-</body>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Nixie+One&display=swap');
@@ -51,6 +62,7 @@
         --dark-blue-grad: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(0, 0, 22) 100%);
     }
     #top-bar {
+        border: var(--debug);
         background: transparent;
         color: white;
         padding: 10px;
@@ -59,6 +71,7 @@
         animation: 5s linear 1s infinite alternate ani;
     }
     #top-bar a {
+        border: var(--debug);
         background: var(--pink-grad);
         background-size: 100%;
         background-clip: text;
@@ -76,6 +89,7 @@
         text-decoration-color: white;
     }
     #top-bar #logo{
+        border: var(--debug);
         margin-right: 30px;
         height: auto;
         transition: 1s;
@@ -96,29 +110,44 @@
         text-decoration: none;
     }
     .colorful {
+        border: var(--debug);
         border-image: var(--blue-grad) 10;
         border-style: none none solid none;
         border-width: 2px;
     }
     .about {
+        border: var(--debug);
         backdrop-filter: brightness(10%), blur(10px);
         border: var(--debug);
         height: auto;
         padding-bottom: 40px;
     }
     .about .pfp {
+        border: var(--debug);
         position: relative;
         left: 40px;
         border-radius: 50%;
         width: 200px;
-
+        transition: 1.3s;
+    }
+    .about .pfp:hover {
+        transform: rotateZ(360deg);
     }
     .about .bio {
+        border: var(--debug);
         display: inline-block;
         right: 40px;
         position: absolute;
     }
+    .about .bio h3 {
+        border: var(--debug);
+        text-align: right;
+    }
+    .about .bio p {
+        border: var(--debug);
+    }
     .about h2 {
+        border: var(--debug);
         font-size: 20pt;
         text-align: center;
     }
@@ -127,23 +156,44 @@
         font-weight: normal;
         letter-spacing: 40px;
         transition: 0.7s;
-        border: var(--debug)
+        border: var(--debug);
+        color: white;
+        text-decoration: none;
+        text-decoration-color: transparent;
     }
     h1:hover {
         letter-spacing: normal;
     }
     .line {
+        border: var(--debug);
         letter-spacing: 0px;
     }
     .title {
-        position: fixed;
         left: 50%;
-        top: 40%;
+        margin-top: 30%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        font-size: 40pt;
+        border: var(--debug);
+    }
+    .title1 {
+        left: 50%;
+        margin-top: 30%;
+        position: absolute;
         transform: translate(-50%, -50%);
         font-size: 40pt;
         border: var(--debug)
     }
-    .header-image  {
+    .title a {
+        text-decoration: none;
+        text-decoration-color: transparent;
+    }
+    .title1 a {
+        text-decoration: none;
+        text-decoration-color: transparent;
+    }
+    .header-image{
+        border: var(--debug);
         text-align: center;
         height: 900px;
         background-size: 100%;
