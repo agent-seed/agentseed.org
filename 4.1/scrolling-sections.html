@@ -1,0 +1,106 @@
+<link href="https://fonts.cdnfonts.com/css/led-digital-7" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nixie+One&display=swap" rel="stylesheet">
+<article class="scroller">
+<section id="one">
+    <h1 class="text">Agentseed</h1>
+</section>
+<section id="two">
+    <h1 class="text">Frontend dev</h1>
+</section>
+<section id="three">
+    <h1 class="text">www.agentseed.org</h1>
+</section>
+<section id="four">
+    <h1 class="text">Agentseed</h1>
+</section>
+<section id="five">
+    <h1 class="text">Frontend dev</h1>
+</section>
+<section id="six">
+    <h1 class="text">www.agentseed.org</h1>
+</section>
+<section id="seven">
+    <h1 class="text">www.agentseed.org</h1>
+</section>
+</article>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Rajdhani:300&display=swap');
+    :root {
+        --scroll: mandatory;
+        --font: 'Nixie One', 'LED Digital 7', sans-serif;
+        --i0: url(https://images.unsplash.com/photo-1550399105-c4db5fb85c18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80);
+        --i1: url(https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80);
+        --i2: url(https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80);
+        --i3: url(https://images.unsplash.com/photo-1666859618920-f045902890df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80);
+        --i4: url(https://images.unsplash.com/photo-1666849540631-75ef3918899d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80);
+        --i5: url(https://images.unsplash.com/photo-1666723603200-2fced6ecc101?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80);
+        --i6: url(https://images.unsplash.com/photo-1532012197267-da84d127e765?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+        --i7: url(https://images.unsplash.com/photo-1666849540631-75ef3918899d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80);
+        --i8: url(https://images.unsplash.com/photo-1666723603200-2fced6ecc101?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80);
+        --i9: url(https://images.unsplash.com/photo-1532012197267-da84d127e765?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+    }
+    body {
+        width: 100%;
+        margin: 0px;
+        scroll-snap-type: var(--scroll);
+        background-color: black;
+    }
+    #one   {background-image: var(--i0);}
+    #two   {background-image: var(--i1);}
+    #three {background-image: var(--i2);}
+    #four  {background-image: var(--i3);}
+    #five  {background-image: var(--i4);}
+    #six   {background-image: var(--i5);}
+    #seven {background-image: var(--i6);}
+    #eight {background-image: var(--i7);}
+    #nine  {background-image: var(--i8);}
+    #ten   {background-image: var(--i9);}
+
+    .div {
+        height: 10px;
+        background-color: #333;
+    }
+    .scroller {
+        height: 100%;
+        overflow-y: scroll;
+        scroll-snap-type: both var(--scroll);
+    }
+    .scroller section {
+        scroll-snap-align: start;
+    }
+    section {
+        height: 100%;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .text {
+        text-align: center;
+          color: black;
+          background-color: white;
+          mix-blend-mode: screen;
+          position: relative;
+          width: fit-content;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          padding: 10px;
+          cursor: none;
+          font-family: var(--font);
+          transition: .7s;
+          font-size: 40pt;
+    }
+</style>
+<script>
+    function scroll() {
+        var scroll = root.style.setProperty('--scroll');
+        let root = document.documentElement;
+        if (scroll == "mandatory") {
+        root.style.setProperty('--scroll', "proximity");
+        } else {
+            root.style.setProperty('--scroll', "proximity");
+        }
+    }
+
+</script>
