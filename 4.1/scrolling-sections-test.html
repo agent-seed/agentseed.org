@@ -12,13 +12,26 @@
 <section id="three">
     <h1 class="text">www.agentseed.org</h1>
 </section>
+<section id="four">
+    <h1 class="text">Agentseed</h1>
+</section>
+<section id="five">
+    <h1 class="text">Frontend dev</h1>
+</section>
+<section id="six">
+    <h1 class="text">www.agentseed.org</h1>
 </article>
 <style>
+    @import url('https://fonts.googleapis.com/css?family=Rajdhani:300&display=swap');
     :root {
-        --font: 'Nixie One', 'LED Digital 7', sans-serif;
+        --font: 'Rajdhani', 'Nixie One', 'LED Digital 7', sans-serif;
         --i1: url(https://images.unsplash.com/photo-1461696114087-397271a7aedc);
         --i2: url(https://images.unsplash.com/photo-1666878093953-18a02f217e9a);
         --i3: url(https://images.unsplash.com/photo-1666812175508-5e22a0a6e91e);
+        --i4: url(https://images.unsplash.com/photo-1666859618920-f045902890df);
+        --i5: url(https://images.unsplash.com/photo-1666849540631-75ef3918899d);
+        --i6: url(https://images.unsplash.com/photo-1666723603200-2fced6ecc101);
+        
     }
     body {
         width: 100%;
@@ -26,21 +39,13 @@
         scroll-snap-type: mandatory;
         background-color: black;
     }
-    #one {
-        background-image: var(--i1);
-    }
-    #two {
-        background-image: var(--i2);
-        height: 1000px;
-        background-attachment: fixed;
-        background-size: cover;
-    }
-    #three {
-        background-image: var(--i3);
-        height: 1000px;
-        background-attachment: fixed;
-        background-size: cover;
-    }
+    #one {background-image: var(--i1);}
+    #two {background-image: var(--i2);}
+    #three {background-image: var(--i3);}
+    #four {background-image: var(--i4);}
+    #five {background-image: var(--i5);}
+    #six {background-image: var(--i6);}
+
     .div {
         height: 10px;
         background-color: #333;
@@ -53,7 +58,7 @@
     .scroller section {
         scroll-snap-align: start;
     }
-    #one, #two, #three {
+    section {
         height: 100%;
         background-attachment: fixed;
         background-size: cover;
