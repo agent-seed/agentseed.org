@@ -180,6 +180,7 @@
     .line span {
         color: blue;
         border: var(--debug);
+        animation: flash 1s infinite;
     }
     .title {
         left: 50%;
@@ -273,6 +274,11 @@
     50%{background-position:90% 100%}
     100%{background-position:11% 0%}
 }
+@keyframes flash {
+    0%{color: transparent;}
+    50%{color: blue;}
+    100%{color: transparent;}
+}
 </style>
 <script>
     function debug() {
@@ -280,7 +286,7 @@
         root.style.setProperty('--debug', "2px red dashed");
         console.log("Element debug mode enabled, enter undebug() to disable")
     }
-    function undebug() {
+    function rebug() {
         let root = document.documentElement;
         root.style.setProperty('--debug', "unset");
         console.log("Element debug mode disabled, enter debug() to enable")
