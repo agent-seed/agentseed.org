@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p id="text">Hello <span id="red">world!</span></p>
+    <div>
+    <h1>heading</h1>
+    </div>
+    <h1>heading</h1>
+    <a href="0.png"><button>go to cool image</button></a>
+</body>
+</html>
+<style>
+    div h1 {
+        color: black;
+        background-color: burlywood;
+    }
+    #red {
+        color: red;
+    }
+    h1  {
+        color: blue;
+        left: 20px;
+    }
+    #text {
+        transition: 0.5s;
+        outline: 3px purple dashed;
+        outline-offset: 5px;
+    }
+    #text:active {
+        color: red;
+        background-color: black;
+        outline-offset: 1px;
+    }
+    button {
+        border-color: blue;
+        border-width: 10px;
+        border-style: inset;
+        transition: 1s;
+    }
+    button:hover {
+        border-color: red;
+        border-style: outset;
+    }
+    body {
+        background-image: url(1.png);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    #one, #two {
+        height: 100%;
+        background-attachment: fixed;
+        position: absolute;
+    }
+    #one {
+        background-image: url(0.png);
+        
+    }
+    #two {
+        background-image: url(1.png);
+        backdrop-filter: blur(10px);
+    }
+</style>
