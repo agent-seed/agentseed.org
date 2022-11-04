@@ -154,8 +154,9 @@
         animation: ani 5s linear infinite;*/
     }
     ::selection {
-        background-color: var(--acc0);
-        color: white;
+        color: var(--acc0);
+        background-color: rgba(0, 0, 0, 0.408);
+        text-decoration: underline var(--acc9);
     }
     .bottom {
         border-left: none;
@@ -359,6 +360,9 @@
         } else {
             document.getElementById("pfp").src = "https://agentseed.org/agent-lines.png";
         }
+    }
+    function color() {
+        changeColor(), changeColor1(),changeColor2(), changeColor3(), changeColor4(), changeColor5(), changeColor6(), changeColor7(), changeColor8(), changeColor9()
     }
     function changeColor() {
     var x=Math.round(0xffffff * Math.random()).toString(16);
