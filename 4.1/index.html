@@ -217,7 +217,7 @@
         text-align: center;
         height: 900px;
         background-size: cover;
-        background-image: url(https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+        background-image: url(https://images.unsplash.com/photo-1579548122080-c35fd6820ecb);
         background-attachment: fixed;
     }
     body {
@@ -283,6 +283,33 @@
     50%{color: blue;}
     100%{color: transparent;}
 }
+@media only screen and (max-width:769px){
+    .pfp {
+        display: none;
+    }
+    .about {
+        height: 100px;
+    }
+    h1 {
+        letter-spacing: normal;
+        font-size: 50pt;
+        text-shadow: 4px 4px 18px rgba(0,0,0,1);
+    }
+    .header-image {
+        height: 500px;
+        background-image: url(https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+    }
+    .title, .title1 {
+        margin-top: 50%;
+    }
+    #top-bar a:active {
+        border: white 2px solid;
+    }
+    * {
+        image-rendering: optimizeSpeed;
+        accent-color: blue;
+    }
+}
 </style>
 <script>
     function debug() {
@@ -294,5 +321,5 @@
         let root = document.documentElement;
         root.style.setProperty('--debug', "unset");
         console.log("Element debug mode disabled, enter debug() to enable")
-    }5
+    }
 </script>
