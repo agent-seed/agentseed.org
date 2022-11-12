@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<title>Agentseed.org</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <br>
 <br>
 <br>
@@ -8,11 +10,22 @@
 <br>
 <br>
 <br>
-<a href="/home.html"><button>Old homepage</button></a>
+<a href="/home.html">Old homepage</a>
+<br>
+<br>
+<br>
+<br>
+<a href="https://github.com/agent-seed/agentseed.org/tree/main/4.1">Github repo</a>
+<br>
+<br>
+<br>
+<br>
+<a href="https://github.com/agent-seed/agentseed.org/tree/main/4.1">Redesign beta</a>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
     body {
-        background-color: #333;
+        background: rgb(46,46,46);
+        background: radial-gradient(circle, rgba(46,46,46,1) 0%, rgba(40,40,40,1) 47%, rgba(27,27,27,1) 100%); 
         text-align: center;
         font-family: 'Raleway', sans-serif;
     }
@@ -22,22 +35,29 @@
         top: 30%;
         color: white;
     }
-    button {
+    a {
         background-color: transparent;
         color: white;
         border: none;
         font-family: 'Raleway', sans-serif;
         font-size: 12pt;
-        padding: 10px;
+        padding: 20px;
         transition: 0.5s;
-        outline: 2px solid white;
-        outline-offset: 10px;
+        border: 2px solid white;
+        outline-offset: 0;
+        text-decoration: none;
+        box-shadow: 10px 10px 27px -7px rgba(0,0,0,0.75);
     }
-    button:hover {
-        outline-offset: 0px;
+    a:hover {
+        border-radius: 40px;
+        text-decoration: underline;
+        box-shadow: 20px 20px 27px -7px rgba(0,0,0,0.75);
     }
-    button:active {
+    a:active {
         color: #888;
         outline-color: #888;
+    }
+    * {
+        text-shadow: 4px 4px 9px rgba(0,0,0,1);
     }
 </style>
