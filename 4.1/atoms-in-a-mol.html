@@ -1,0 +1,74 @@
+<center>
+<input type="number" id="num" placeholder="Enter mols here...">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<button type="button" id="submit" onclick="calculate()">Submit</button>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div id="outwrap">
+   <p id="out">[Output_here]</p> 
+</div>
+
+</center>
+<script>
+function calculate () {
+     num = document.getElementById('num').value
+     num = num * 620000000000000000000000;
+     document.getElementById('out').innerHTML = num;
+     document.getElementById('num').innerHTML = "";
+}
+     document.getElementById("num")
+    .addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+        document.getElementById("submit").click();
+    }
+});
+
+</script>
+<style>
+    body {
+        background-color: #111;
+        color: white;
+        font-family: serif;
+    }
+    #out, #num, #submit {
+        box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    }
+    * {
+        font-family: serif;
+        border-radius: 10px;
+        
+    }
+    #outwrap {
+        font-size: 60pt;
+        border: solid 2px purple;
+        height: min-content;
+        width: min-content;
+        padding: 30px;
+    }
+    #num {
+        background-color: #111;
+        border: solid 2px purple;
+        font-size: 30pt;
+        color: white;
+    }
+    #submit {
+        background-color: #111;
+        border: solid 2px purple;
+        font-size: 30pt;
+        color: white; 
+    }
+    #submit:active {
+        transform: translate(5px, 5px);
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    }
+</style>
