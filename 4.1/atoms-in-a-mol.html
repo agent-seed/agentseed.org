@@ -1,11 +1,6 @@
+<!-- Atoms in a molecule 1.0 By Cedar DeLacy (aka Agentseed)-->
 <center>
-<input type="number" id="num" placeholder="Enter mols here...">
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<input autofocus type="number" id="num" placeholder="Enter moles here...">
 <button type="button" id="submit" onclick="calculate()">Submit</button>
 <br>
 <br>
@@ -14,9 +9,14 @@
 <br>
 <br>
 <div id="outwrap">
+    <p id="desc"></p>
    <p id="out">[Output_here]</p> 
 </div>
-
+<div id="colors">
+    <input id="one" type="radio" name="theme" checked value="blueviolet">
+    <input id="two" type="radio" name="theme" value="red">
+    <input id="three" type="radio" name="theme" value="green">
+</div>
 </center>
 <script>
 function calculate () {
@@ -24,6 +24,7 @@ function calculate () {
      num = num * 620000000000000000000000;
      document.getElementById('out').innerHTML = num;
      document.getElementById('num').innerHTML = "";
+     document.getElementById('desc').innerHTML = "Number of atoms:";
 }
      document.getElementById("num")
     .addEventListener("keyup", function(event) {
@@ -31,16 +32,45 @@ function calculate () {
     if (event.keyCode === 13) {
         document.getElementById("submit").click();
     }
-});
+});    
+    const root = document.querySelector(":root"),
+      inputs = document.querySelectorAll("input[name='theme']");
+
+const theme = localStorage.getItem("accent");
+
+const updateRoot = value => root.style.setProperty("--accent", `var(--${value})`);
+
+for(const input of inputs) {
+  if(theme && input.value === theme) {
+    input.checked = true;
+    
+    updateRoot(theme);
+  }
+  
+  input.onchange = e => {
+    updateRoot(e.target.value);
+    
+    localStorage.setItem("accent", e.target.value);
+  }
+}
+
 
 </script>
 <style>
+    :root {
+        --blueviolet: blueviolet;
+        --red: red;
+        --green: green;
+        --background: #111;
+        --accent: var(--blueviolet);
+        --rainbow: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+    }
     body {
-        background-color: #111;
+        background-color: var(--background);
         color: white;
         font-family: serif;
     }
-    #out, #num, #submit {
+    #outwrap, #num, #submit {
         box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
     }
     * {
@@ -48,27 +78,58 @@ function calculate () {
         border-radius: 10px;
         
     }
+    #out {
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
     #outwrap {
         font-size: 60pt;
-        border: solid 2px purple;
+        border: solid 2px var(--accent);
         height: min-content;
         width: min-content;
-        padding: 30px;
+        
     }
     #num {
-        background-color: #111;
-        border: solid 2px purple;
+        background-color: transparent;
+        border: solid 2px var(--accent);
         font-size: 30pt;
         color: white;
+        border-radius: 10px 0px 0px 10px;
+    }
+    #num:active {
+        border-radius: 10px 0px 0px 10px;
+        outline: none;
+        accent-color: blue;
     }
     #submit {
-        background-color: #111;
-        border: solid 2px purple;
+        background-color: transparent;
+        border: solid 2px var(--accent);
         font-size: 30pt;
         color: white; 
+        border-radius: 0px 10px 10px 0px;
     }
     #submit:active {
-        transform: translate(5px, 5px);
+        transform: translate(-5px, 0px);
         box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    }
+    #desc {
+        font-size: 20pt;
+        padding: none;
+    }
+    #one {
+        accent-color: var(--blueviolet);
+    }
+    #two {
+        accent-color: var(--red);
+    }
+    #three {
+        accent-color: var(--green);
+    }
+    #colors {
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
     }
 </style>
