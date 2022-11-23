@@ -170,12 +170,11 @@
         'Why&apos;d the chicken cross the road?',
         'To be, or not to be!',
         'To the moon!',
-        'There&apos;s' + num  + "of these!",   
+        'There&apos;s ' + phraseLength  + ' of these!',
         ]
     var phraseLength = phrases.length;
-    var num = randomNumber(phraseLength);
     function marquee() {
-        
+        var num = randomNumber(phraseLength);
         document.getElementById('banner').innerHTML = phrases[num];
     }
     function randomNumber(max) {
