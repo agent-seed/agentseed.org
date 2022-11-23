@@ -25,6 +25,7 @@
 <a href="redesign.html" class="a">Redesign beta</a>
 </body>
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
     body {
         background: rgb(46,46,46);
@@ -75,7 +76,8 @@
         padding: 10px;
         background-size: 400%;
         animation: ani infinite 15s;
-        font-weight: bold;
+        font-weight: bolder;
+        font-family: 'Abel', 'Raleway', sans-serif;
     }
     #banner a {
         color: white;
@@ -89,9 +91,9 @@
 <script>
     var phrases = [
         'Have you tried turning it off and on again?',
-        'Home of something, but we don’t remember!',
+        'Home of something, but we don&apos;t remember!',
         'Absolutly no cookies!',
-        'Have you tried combustion? It’s fire!',,
+        'Have you tried combustion? It&apos;s fire!',,
         'HTML rules, PHP drools!',
         'Comes, redesigns website, refuses to elaborate, leaves!',
         'Open source for life!',
@@ -105,7 +107,7 @@
         'Have a nice day!',
         'Press CTRL + U to view source!',
         'Support local businesses!',
-        'There’s a lot of these!',
+        'There&apos;s a lot of these!',
         'Minceraft!',
         'Follow the white rabbit!',
         'Great buy, only 99&cent;!',
@@ -122,7 +124,7 @@
         'x + x = x!',
         'Pineapple on pizza is mid, but not evil!',
         'Hulk smash!',
-        'Please don’t sue me!',
+        'Please don&apos;t sue me!',
         'Doh!',
         'Caught in 4k!',
         'Colby!',
@@ -133,15 +135,15 @@
         'In and out, thirty minute adventure!',
         'The oldest anarchy server in minecraft!',
         'Correcthorsebatterystaple',
-        'You don’t know the power of the dark side!',
+        'You don&apos;t know the power of the dark side!',
         'ACAB!',
         'Oof!',
-        '"I’m in me mum’s car, vroom vroom" "Get out me car!" "Aww"',
+        '"I&apos;m in me mum&apos;s car, vroom vroom" "Get out me car!" "Aww"',
         'Yeet!',
         'Windows.exe stopped responding!',
         'Delete System32, make your computer run faster!',
         'Well, bite my biscut!',
-        'Thanks to today’s sponser, RAID Shadow legends!',
+        'Thanks to today&apos;s sponser, RAID Shadow legends!',
         'rockyou.txt!',
         'No catnip?',
         '[Parental advisory, explicit content]',
@@ -149,12 +151,12 @@
         'Titans GO!',
         'Removed Herobrine!',
         'Added Herobrine!',
-        'Congratulations, you’re the millionth visitor!',
+        'Congratulations, you&apos;re the millionth visitor!',
         'Double kill!',
         'Triple kill!',
         'Killing spree!',
         '!important',
-        'Error 418, I’m a teapot!',
+        'Error 418, I&apos;m a teapot!',
         'The code <i>is</i> the documentation!',
         '(...) Java, otherwise know as JavaScript (...)',
         'Read the FAQ!',
@@ -165,13 +167,15 @@
         'Something!',
         'Nothing!',
         'Why',
-        'Why’d the chicken cross the road?',
+        'Why&apos;d the chicken cross the road?',
         'To be, or not to be!',
-        'To the moon!',        
+        'To the moon!',
+        'There&apos;s' + num  + "of these!",   
         ]
     var phraseLength = phrases.length;
+    var num = randomNumber(phraseLength);
     function marquee() {
-        var num = randomNumber(phraseLength);
+        
         document.getElementById('banner').innerHTML = phrases[num];
     }
     function randomNumber(max) {
