@@ -1,8 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-<title>Joseph Cinqué - Agentseed.org</title>
+<title>John Armfield - Agentseed.org</title>
 <link rel="favicon" type="image/png" href="http://sites.middlebury.edu/fyse1229habib/files/2011/09/Galileo-9305220-1-402.jpg">
 <link rel="icon" type="image/png" href="http://sites.middlebury.edu/fyse1229habib/files/2011/09/Galileo-9305220-1-402.jpg">
 <meta name="description" content="Agentseed's linktree">
@@ -16,7 +16,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@500&display=swap" rel="stylesheet"> 
 <script src="https://agentseed.org/particles.js/particles.min.js"></script>
 </head>
-<body onload="imgSetup()">
+<body onload="imgSetup(), timer()">
     <br>
     <br>
     <br>
@@ -29,21 +29,21 @@
             <img src="https://agentseed.org/placeholder.png" onclick="changeImage()" id="pfp">
             <br>
             <br>
-            <h1>Joseph Cinqué</h1>
-            <p>Slave 1814 - 1849</p>
+            <h1>John Armfield</h1>
+            <p>an american slave trader</p>
             <hr>
                 <a>
-                    Was a slave in 1849, before he led a revolt aboard the ship La Amistad. He was born in 1814 in west Africa, and he died in 1879 in British Sierra Leone. The most interesting part about him is the slave revolt he led. It all began when him and 52 other slaves were being illegally  transported to Cuba to be sold. The ship's chef had made a comment about cooking them, which Joseph obviously took offense to, because three days later he broke the other prisoners out, and they took control of the boat (killing the captain and cook). The group sailed up the east coast of the US, but were soon taken over by the Washington (another ship). The group escaped onto land, where they were soon caught. Once they had been captured they were imprisoned on charges of murder and piracy, the Spaniards who originally captured them were sued for kidnapping and enslaving, the supreme court sided with the slaves, and they returned to their homeland of Sierra Leone. This was important because it kick-started the anti-slavery movement in the US.
+                    Born in 1797, John Armfield was the co-founder of the largest slave trading company in the US, he also founded several other sucessful buisness. He took up slave trading sometime in the 1820s. In 1828 he and his uncle founded their infamous slave trading comapany. He and his uncle joked about raping then selling slaves, and he is know to have at lease on child with one of the slaves he sold. He made over a half a million dollars (not adjusted), transporting around 1,200 slaves a year. 
                 </a>
                 <br>
             <hr>
             <p class="bottom-text">
-                <a href="https://docs.google.com/document/d/1ZE-liOZmrgXBWmPjXtCFzdJl8l8FQBRV9QXNqBAXT7I/edit?usp=sharing"><img class="social" src="https://1000logos.net/wp-content/uploads/2020/05/Google-Docs-logo-400x400.png"></a>
-                <a href="https://en.wikipedia.org/wiki/La_Amistad"><img class="social" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Wikipedia_logo_v3.svg/2048px-Wikipedia_logo_v3.svg.png"></a>
-                <a href="https://en.wikipedia.org/wiki/Joseph_Cinqu%C3%A9i"><img class="social" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Wikipedia_logo_v3.svg/2048px-Wikipedia_logo_v3.svg.png"></a>
+                <a href="https://docs.google.com/document/d/1W1tgiDhS3Y-PjFKaBGcHIBjkEosMSbAMX0FRefmvxV4/edit?usp=sharing"><img class="social" src="https://1000logos.net/wp-content/uploads/2020/05/Google-Docs-logo-400x400.png"></a>
+                <a href="https://en.wikipedia.org/wiki/John_Armfield"><img class="social" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Wikipedia_logo_v3.svg/2048px-Wikipedia_logo_v3.svg.png"></a>
+                <a href="https://encyclopediavirginia.org/entries/armfield-john-1797-1871/"><img class="social" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/University_of_Virginia_seal.svg/1200px-University_of_Virginia_seal.svg.png"></a>
             </p>
         </div>
-        <span class="material-symbols-outlined" onclick="changeColor(), changeColor1(),changeColor2(), changeColor3(), changeColor4(), changeColor5(), changeColor6(), changeColor7(), changeColor8(), changeColor9()">
+        <span class="material-symbols-outlined" onclick="color()">
             palette
             </span>
 </body>
@@ -227,11 +227,10 @@
 </style>
 </style>
 <script rel="preconnect">
-    var img1 = "https://aaregistry.org/wp-content/uploads/2020/03/joseph-cinque.png";
-    var img2 = "https://upload.wikimedia.org/wikipedia/commons/3/3a/Sengbe_Pieh.jpg";
+    var img1 = "https://www.wikitree.com/photo.php/0/06/Armfield-157.jpg";
+    var img2 = "https://www.virginiamemory.com/online-exhibitions/files/square_thumbnails/e1e3b4aacec8c2533c75f17f4998ff04.jpg";
 function imgSetup() {
     document.getElementById("pfp").src == img1;
-    console.log(img1 + " + " + img2)
     console.log("Document loaded")
 }
 function changeImage() {
@@ -241,7 +240,23 @@ function changeImage() {
         document.getElementById("pfp").src = img1;
     }
 }
-function changeColor() {
+function timer() {
+    timer = setInterval(function() {changeImage();}, 5000);
+    console.log("Script loaded")
+}
+function color() {
+    changeColor();
+    changeColor1();
+    changeColor2();
+    changeColor3();
+    changeColor4();
+    changeColor5();
+    changeColor6();
+    changeColor7();
+    changeColor8();
+    changeColor9();
+}
+function changeColor0() {
 var x=Math.round(0xffffff * Math.random()).toString(16);
 var y=(6-x.length);
 var z="000000";
