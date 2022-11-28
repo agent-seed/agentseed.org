@@ -1,4 +1,6 @@
+var phraseLength = phrases.length;
 var phrases = [
+    'There&apos;s ' + phraseLength  + ' of these!',
     'Have you tried turning it off and on again?',
     'Home of something, but we don&apos;t remember!',
     'Absolutly no cookies!',
@@ -79,12 +81,12 @@ var phrases = [
     'Why&apos;d the chicken cross the road?',
     'To be, or not to be!',
     'To the moon!',
-    'There&apos;s ' + phraseLength  + ' of these!',
     ]
 var phraseLength = phrases.length;
 function marquee() {
     var num = randomNumber(phraseLength);
     document.getElementById('banner').innerHTML = phrases[num];
+    console.log( phrases[0])
 }
 function randomNumber(max) {
     return Math.floor(Math.random() * max);
