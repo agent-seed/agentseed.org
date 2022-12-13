@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <title>Agentseed&apos;s website</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<body>
+<body onload="changeMarquee()">
 <div id="top-bar">
+ <p id="banner">Welcome to my website!</p>   
     <a id="logo">A</a>
     <a href="/">Home</a>    
     <a href="/aboutme">About me</a>
@@ -52,6 +53,7 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Nixie+One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
     :root{
         --debug: unset; 
         --font-color: white; /* var(--font-color) */
@@ -70,9 +72,6 @@
         --rad-grad: radial-gradient(at 72% 6%, hsla(201,97%,53%,1) 0px, transparent 50%), radial-gradient(at 19% 79%, hsla(348,91%,61%,1) 0px, transparent 50%), radial-gradient(at 11% 15%, hsla(287,91%,61%,1) 0px, transparent 50%), radial-gradient(at 80% 77%, hsla(266,67%,39%,1) 0px, transparent 50%);
         --blue-grad: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 36%, rgba(0,212,255,1) 100%);
         --dark-blue-grad: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(0, 0, 22) 100%);
-    }
-    * {
-        border: var(--debug);
     }
     #top-bar {
         border: var(--debug);
@@ -218,11 +217,10 @@
         text-align: center;
         height: 900px;
         background-size: cover;
-        background-image: url(https://images.unsplash.com/photo-1579548122080-c35fd6820ecb);
+        background-image: url(https://images.unsplash.com/photo-1550353127-b0da3aeaa0ca);
         background-attachment: fixed;
     }
     body {
-
         background-image: url(1.png);
         background-size: cover;
         background-attachment: fixed;
@@ -236,9 +234,7 @@
         margin-left: 0px;
         margin-top: 0px;
         margin-bottom: 0px;
-        
     }
-
 @-webkit-keyframes ani {
 0%{background-position:0% 50%}
 50%{background-position:100% 50%}
@@ -298,7 +294,7 @@
     }
     .header-image {
         height: 500px;
-        background-image: url(https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+        background-image: url(https://images.unsplash.com/photo-1579548122080-c35fd6820ecb);
     }
     .title, .title1 {
         margin-top: 50%;
@@ -307,7 +303,6 @@
         border: white 2px solid;
     }
     * {
-        
         image-rendering: optimizeSpeed;
         accent-color: blue;
     }
@@ -325,3 +320,5 @@
         console.log("Element debug mode disabled, enter debug() to enable")
     }
 </script>
+<script src="banner.js"></script>
+<link rel="stylesheet" href="https://agentseed.org/banner.css">

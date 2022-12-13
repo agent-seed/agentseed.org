@@ -1,0 +1,23 @@
+<!-- Atoms in a molecule [BASIC] 1.0 By Cedar DeLacy (aka Agentseed)-->
+<center>
+<input autofocus type="number" id="num" placeholder="Enter moles here...">
+<button type="button" id="submit" onclick="calculate()">Submit</button>
+    <p id="desc"></p>
+   <p id="out">[Output_here]</p> 
+</center>
+<script>
+function calculate () {
+     num = document.getElementById('num').value
+     num = num * 620000000000000000000000;
+     document.getElementById('out').innerHTML = num;
+     document.getElementById('num').innerHTML = "";
+     document.getElementById('desc').innerHTML = "Number of atoms:";
+}
+     document.getElementById("num")
+    .addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+        document.getElementById("submit").click();
+    }
+});    
+</script>

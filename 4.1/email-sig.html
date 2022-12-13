@@ -1,0 +1,71 @@
+<html>
+    <div class="body">
+        <hr class="color">
+        <a href="https://agentseed.org/linktree" class="grad" id="title">Cedar DeLacy</a>
+        <br>
+        <img src="https://agentseed.org/imgs/logo-lines.png" alt="Circle A profile picture" id="pfp">
+        <br>
+        <a href="mailto:admin@agentseed.org" class="grad" id="email">admin@agentseed.org</a>
+        <br>
+        <a href="tel:15056908301" class="grad" id="phone">+1 (505) 690-8301</a>
+        <br>
+    </div>
+</html>
+<style>
+    * {
+        text-decoration: none;
+    }
+    *:hover {
+        text-decoration: underline;
+    }
+    :root {
+        --g: linear-gradient(45deg, #cf8bf9, #00f5ff, #70ffa8);
+        --g1: linear-gradient(45deg, #cf8bf9, #00f5ff, #70ffa8) 10;
+    }
+    body {
+        background-color: #222;
+    }
+
+    .color {
+        border: none;
+        border-top: solid;
+        border-width: 5px;
+        border-image: var(--g1);
+    }
+    #title {
+        font-size: xx-large;
+    }
+    .grad {
+        background: var(--g);
+        font-family: sans-serif;
+        background-clip: text;
+        background-size: 400%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: 5s linear 1s infinite alternate hor;  
+    }
+    #pfp {
+        width: 100px;
+        border-radius: 50%;
+    }
+    @-webkit-keyframes hor {
+    0%{background-position:11% 0%}
+    50%{background-position:90% 100%}
+    100%{background-position:11% 0%}
+}
+@-moz-keyframes hor {
+    0%{background-position:11% 0%}
+    50%{background-position:90% 100%}
+    100%{background-position:11% 0%}
+}
+@-o-keyframes hor {
+    0%{background-position:11% 0%}
+    50%{background-position:90% 100%}
+    100%{background-position:11% 0%}
+}
+@keyframes hor {
+    0%{background-position:11% 0%}
+    50%{background-position:90% 100%}
+    100%{background-position:11% 0%}
+}
+</style>

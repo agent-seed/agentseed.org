@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<title>John Armfield - Agentseed.org</title>
+<link rel="favicon" type="image/png" href="http://sites.middlebury.edu/fyse1229habib/files/2011/09/Galileo-9305220-1-402.jpg">
+<link rel="icon" type="image/png" href="http://sites.middlebury.edu/fyse1229habib/files/2011/09/Galileo-9305220-1-402.jpg">
+<meta name="description" content="Agentseed's linktree">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.cdnfonts.com/css/led-digital-7" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nixie+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@500&display=swap" rel="stylesheet"> 
+<script src="https://agentseed.org/particles.js/particles.min.js"></script>
+</head>
+<body onload="imgSetup(), timer()">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+        <div class="main" >
+            <img src="https://agentseed.org/placeholder.png" onclick="changeImage()" id="pfp">
+            <br>
+            <br>
+            <h1>John Armfield</h1>
+            <p>an american slave trader</p>
+            <hr>
+                <a>
+                    Born in 1797, John Armfield was the co-founder of the largest slave trading company in the US. He also founded several other sucessful buisness. He took up slave trading in the 1820s. In 1828 he and his uncle founded their infamous slave trading comapany. He and his uncle joked about raping then selling slaves. He is know to have at least one child with one of the enslaved woman. He went on to sell both the women and his child. He made over a half a million dollars (not adjusted to modern value), transporting around 1,200 slaves a year. He was friends with several influential personallities in Nashville, wher he attended church. He developed a resort that still exists today. He also funded the Sewanee university of the south. He died in 1871 of old age.
+                </a>
+                <br>
+            <hr>
+            <p class="bottom-text">
+                <a href="https://docs.google.com/document/d/1W1tgiDhS3Y-PjFKaBGcHIBjkEosMSbAMX0FRefmvxV4/edit?usp=sharing"><img class="social" src="https://1000logos.net/wp-content/uploads/2020/05/Google-Docs-logo-400x400.png"></a>
+                <a href="https://en.wikipedia.org/wiki/John_Armfield"><img class="social" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Wikipedia_logo_v3.svg/2048px-Wikipedia_logo_v3.svg.png"></a>
+                <a href="https://encyclopediavirginia.org/entries/armfield-john-1797-1871/"><img class="social" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/University_of_Virginia_seal.svg/1200px-University_of_Virginia_seal.svg.png"></a>
+            </p>
+        </div>
+        <span class="material-symbols-outlined" onclick="color()">
+            palette
+            </span>
+</body>
+<style>
+    :root{
+        --font: 'Nixie One', 'LED Digital 7', monospace, sans-serif;
+        --font2: monospace;
+        --text-c: black;
+        --background-c: white;
+        --acc0: #CC5803;
+        --acc1: #CC5803;
+        --acc2: #E2711D;
+        --acc3: #FF9505;
+        --acc4: #FFB627;
+        --acc5: #FFC971;
+        --acc6: #7B0D1E;
+        --acc7: #9F2042;
+        --acc8: #682D63;
+        --acc9: #CE1483;
+        --grad: linear-gradient(90deg, var(--acc0), var(--acc1), var(--acc2), var(--acc3), var(--acc4), var(--acc5), var(--acc6), var(--acc7), var(--acc8), var(--acc9));
+        --grad-small: linear-gradient(90deg, var(--acc0), var(--acc1), var(--acc2));      
+    }
+      ::-webkit-scrollbar{
+        background-color: transparent;
+        mix-blend-mode: screen;
+        width: 10px;
+      }
+      ::-webkit-scrollbar-thumb {
+        border-color: var(--acc0);
+        border-width: 1px;
+        border-style: solid;
+        background-color: var(--background);
+      }
+      ::selection {
+        text-decoration: underline;
+        text-decoration-color: var(--acc0);
+        background-color: var(--acc0);
+        color: white;
+      }
+    .social {
+        width: 100px;
+        height: 100px;
+        mix-blend-mode: normal;
+        transition: 1s;
+    }
+    .social:hover {
+        transform: scale(1.2) translateY(-10px);
+        transition: 1s;
+    }
+    .social:active {
+        transform: translateY(20px);
+        transition: 0.5s;
+    }
+    hr {
+        border-style: none none solid none;
+        border-width: 2px;
+        border-color: var(--acc0);
+        box-shadow: #000000 -2px 2px 5px;
+        border-image: var(--grad) 10;
+    }
+    #pfp {
+        border: 2px var(--acc0) solid;
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+        transition: 0.5s;
+        position: absolute;
+        top: 0px;
+        transform: translate(-50%, -50%);
+      }
+    #pfp:hover {
+        border: 2px var(--acc9) solid
+    }
+    #pfp:active {
+        transform: translate(-50%, -50%) rotateY(180deg);
+    }
+    .bottom-text {
+        font-size: xx-large;
+        font-family: var(--font);
+    }
+    body {
+        background: #131313;
+        background-image: var(--background);
+        background-repeat: repeat;
+        color: var(--text-c);
+        font-family: var(--font);
+    }
+    
+    .main {
+        border: 2px solid var(--acc0);
+        mix-blend-mode: normal;
+        margin: auto;
+        display: block;
+        background-color: rgba(0,0,0,0,0.4);
+        backdrop-filter: blur(100px);
+        border-radius: 10px;
+        font-size: xx-large;
+        max-width: fit-content;
+        width: 70%;
+        padding: 20px;
+        text-align: center;
+        color: white;
+        z-index: 999;
+    }
+    .main p{
+        font-family: var(--font);
+        font-weight: normal;
+        text-shadow: #000000 -2px 2px 5px;
+    }
+    .main a{
+        font-size: large;
+    }
+    .main h1{
+        text-decoration: none;
+        text-decoration-thickness: 3px;
+        font-size: 40pt;
+        text-shadow: #000000 -2px 2px 5px;
+    }
+    .button {
+        background-color: transparent;
+        border-style: solid;
+        border-color: transparent;
+        color: white;
+        font-size: x-large;
+        font-family: var(--font);
+        font-weight: 900;
+        text-decoration: none;
+        transition: 1s;
+        text-shadow: #000000 -2px 2px 5px;
+    }
+    .button:hover {
+        /* border-style: none solid solid solid; */
+        border-style: solid;
+        border-radius: 0px;
+        text-decoration: underline;
+        transition: 1s;
+        text-decoration-color: var(--acc0);
+    }
+    .button:active {
+        border-color: white;
+        transition: 1s;
+    }
+    @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+    background-color: rgba(0,0,0,0,0.4);
+    backdrop-filter: blur(100px);
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1px;
+    border-radius: 10px;
+    font-size: xx-large;
+    width: fit-content;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    z-index: 999;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+.material-symbols-outlined:hover {
+    color: var(--acc0);
+}
+</style>
+</style>
+<script rel="preconnect">
+    var img1 = "https://www.wikitree.com/photo.php/0/06/Armfield-157.jpg";
+    var img2 = "https://www.virginiamemory.com/online-exhibitions/files/square_thumbnails/e1e3b4aacec8c2533c75f17f4998ff04.jpg";
+function imgSetup() {
+    document.getElementById("pfp").src == img1;
+    console.log("Document loaded")
+}
+function changeImage() {
+    if (document.getElementById("pfp").src == img1){
+        document.getElementById("pfp").src = img2;
+    } else {
+        document.getElementById("pfp").src = img1;
+    }
+}
+function timer() {
+    timer = setInterval(function() {changeImage();}, 5000);
+    console.log("Script loaded")
+}
+function color() {
+    changeColor();
+    changeColor1();
+    changeColor2();
+    changeColor3();
+    changeColor4();
+    changeColor5();
+    changeColor6();
+    changeColor7();
+    changeColor8();
+    changeColor9();
+}
+function changeColor0() {
+var x=Math.round(0xffffff * Math.random()).toString(16);
+var y=(6-x.length);
+var z="000000";
+var z1 = z.substring(0,y);
+var color= "#" + z1 + x;
+
+  root.style.setProperty('--acc0', color);
+  /*root.style.setProperty('--acc1', color);
+  root.style.setProperty('--acc2', color);
+  root.style.setProperty('--acc3', color);
+  root.style.setProperty('--acc4', color);
+  root.style.setProperty('--acc5', color);
+  root.style.setProperty('--acc6', color);
+  root.style.setProperty('--acc7', color);
+  root.style.setProperty('--acc8', color);
+  root.style.setProperty('--acc9', color);*/
+  /*console.log(color + " " + "<--" + " " + "current color");*/
+}
+let root = document.documentElement;
+function changeColor1() {
+var x=Math.round(0xffffff * Math.random()).toString(16);
+var y=(6-x.length);
+var z="000000";
+var z1 = z.substring(0,y);
+var color= "#" + z1 + x;
+
+  root.style.setProperty('--acc1', color);
+  /*console.log(color + " " + "<--" + " " + "current color");*/
+}
+function changeColor2() {
+var x=Math.round(0xffffff * Math.random()).toString(16);
+var y=(6-x.length);
+var z="000000";
+var z1 = z.substring(0,y);
+var color= "#" + z1 + x;
+
+  root.style.setProperty('--acc2', color);
+  /*console.log(color + " " + "<--" + " " + "current color");*/
+}
+function changeColor3() {
+var x=Math.round(0xffffff * Math.random()).toString(16);
+var y=(6-x.length);
+var z="000000";
+var z1 = z.substring(0,y);
+var color= "#" + z1 + x;
+
+  root.style.setProperty('--acc3', color);
+  /*console.log(color + " " + "<--" + " " + "current color");*/
+}
+function changeColor4() {
+var x=Math.round(0xffffff * Math.random()).toString(16);
+var y=(6-x.length);
+var z="000000";
+var z1 = z.substring(0,y);
+var color= "#" + z1 + x;
+
+  root.style.setProperty('--acc4', color);
+  /*console.log(color + " " + "<--" + " " + "current color");*/
+}
+function changeColor5() {
+var x=Math.round(0xffffff * Math.random()).toString(16);
+var y=(6-x.length);
+var z="000000";
+var z1 = z.substring(0,y);
+var color= "#" + z1 + x;
+
+  root.style.setProperty('--acc5', color);
+  /*console.log(color + " " + "<--" + " " + "current color");*/
+}
+function changeColor6() {
+var x=Math.round(0xffffff * Math.random()).toString(16);
+var y=(6-x.length);
+var z="000000";
+var z1 = z.substring(0,y);
+var color= "#" + z1 + x;
+
+  root.style.setProperty('--acc6', color);
+  /*console.log(color + " " + "<--" + " " + "current color");*/
+}
+function changeColor7() {
+var x=Math.round(0xffffff * Math.random()).toString(16);
+var y=(6-x.length);
+var z="000000";
+var z1 = z.substring(0,y);
+var color= "#" + z1 + x;
+
+  root.style.setProperty('--acc7', color);
+  /*console.log(color + " " + "<--" + " " + "current color");*/
+}
+function changeColor8() {
+var x=Math.round(0xffffff * Math.random()).toString(16);
+var y=(6-x.length);
+var z="000000";
+var z1 = z.substring(0,y);
+var color= "#" + z1 + x;
+
+  root.style.setProperty('--acc8', color);
+  /*console.log(color + " " + "<--" + " " + "current color");*/
+}
+function changeColor9() {
+var x=Math.round(0xffffff * Math.random()).toString(16);
+var y=(6-x.length);
+var z="000000";
+var z1 = z.substring(0,y);
+var color= "#" + z1 + x;
+
+  root.style.setProperty('--acc9', color);
+  /*console.log(color + " " + "<--" + " " + "current color");*/
+}
+
+</script>
+<div class="background">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+ </div>
+ <style>
+@keyframes move {
+    100% {
+        transform: translate3d(0, 0, 1px) rotate(360deg);
+    }
+}
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #131313;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.background span {
+    width: 27vmin;
+    height: 27vmin;
+    border-radius: 27vmin;
+    backface-visibility: hidden;
+    position: absolute;
+    animation: move;
+    animation-duration: 45;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+.background span:nth-child(0) {
+    color: var(--acc0);
+    top: 92%;
+    left: 6%;
+    animation-duration: 44s;
+    animation-delay: -31s;
+    transform-origin: 21vw 17vh;
+    box-shadow: -54vmin 0 7.291521466652509vmin currentColor;
+}
+.background span:nth-child(1) {
+    color: var(--acc1);
+    top: 1%;
+    left: 86%;
+    animation-duration: 17s;
+    animation-delay: -30s;
+    transform-origin: 2vw 10vh;
+    box-shadow: -54vmin 0 7.022038202928964vmin currentColor;
+}
+.background span:nth-child(2) {
+    color: var(--acc2);
+    top: 61%;
+    left: 78%;
+    animation-duration: 43s;
+    animation-delay: -21s;
+    transform-origin: 17vw 12vh;
+    box-shadow: -54vmin 0 7.594991330212003vmin currentColor;
+}
+.background span:nth-child(3) {
+    color: var(--acc3);
+    top: 35%;
+    left: 41%;
+    animation-duration: 24s;
+    animation-delay: -23s;
+    transform-origin: -22vw -18vh;
+    box-shadow: -54vmin 0 7.3168997040988435vmin currentColor;
+}
+.background span:nth-child(4) {
+    color: var(--acc4);
+    top: 48%;
+    left: 20%;
+    animation-duration: 18s;
+    animation-delay: -50s;
+    transform-origin: -14vw -12vh;
+    box-shadow: -54vmin 0 6.910301006675189vmin currentColor;
+}
+.background span:nth-child(5) {
+    color: var(--acc5);
+    top: 73%;
+    left: 11%;
+    animation-duration: 50s;
+    animation-delay: -27s;
+    transform-origin: -1vw -24vh;
+    box-shadow: -54vmin 0 6.822412268784945vmin currentColor;
+}
+.background span:nth-child(6) {
+    color: var(--acc6);
+    top: 84%;
+    left: 45%;
+    animation-duration: 7s;
+    animation-delay: -30s;
+    transform-origin: 0vw 3vh;
+    box-shadow: -54vmin 0 7.303698783543982vmin currentColor;
+}
+.background span:nth-child(7) {
+    color: var(--acc7);
+    top: 48%;
+    left: 80%;
+    animation-duration: 6s;
+    animation-delay: -15s;
+    transform-origin: 16vw 11vh;
+    box-shadow: -54vmin 0 7.329737701768875vmin currentColor;
+}
+.background span:nth-child(8) {
+    color:  var(--acc8);
+    top: 100%;
+    left: 6%;
+    animation-duration: 7s;
+    animation-delay: -23s;
+    transform-origin: 12vw 3vh;
+    box-shadow: -54vmin 0 7.348962473307406vmin currentColor;
+}
+.background span:nth-child(9) {
+    color: var(--acc9);
+    top: 46%;
+    left: 63%;
+    animation-duration: 49s;
+    animation-delay: -30s;
+    transform-origin: 3vw 21vh;
+    box-shadow: -54vmin 0 6.7812910064490195vmin currentColor;
+}
+.background span:nth-child(10) {
+    color: var(--acc0);
+    top: 77%;
+    animation-duration: 11s;
+    animation-delay: -11s;
+    transform-origin: 10vw 0vh;
+    box-shadow: -54vmin 0 7.014512086562785vmin currentColor;
+}
+.background span:nth-child(11) {
+    color: var(--acc1);
+    top: 79%;
+    left: 75%;
+    animation-duration: 12s;
+    animation-delay: -36s;
+    transform-origin: -12vw -24vh;
+    box-shadow: 54vmin 0 7.632408213418455vmin currentColor;
+}
+.background span:nth-child(12) {
+    color: var(--acc2);
+    top: 73%;
+    left: 71%;
+    animation-duration: 47s;
+    animation-delay: -17s;
+    transform-origin: 22vw 18vh;
+    box-shadow: -54vmin 0 7.042313735230276vmin currentColor;
+}
+.background span:nth-child(13) {
+    color: var(--acc3);
+    top: 21%;
+    left: 14%;
+    animation-duration: 30s;
+    animation-delay: -47s;
+    transform-origin: -15vw -6vh;
+    box-shadow: -54vmin 0 6.917490364932318vmin currentColor;
+}
+.background span:nth-child(14) {
+    color: var(--acc4);
+    top: 46%;
+    left: 46%;
+    animation-duration: 14s;
+    animation-delay: -45s;
+    transform-origin: 7vw 22vh;
+    box-shadow: 54vmin 0 7.596256007634647vmin currentColor;
+}
+.background span:nth-child(15) {
+    color: var(--acc5);
+    top: 17%;
+    left: 34%;
+    animation-duration: 29s;
+    animation-delay: -23s;
+    transform-origin: -14vw 6vh;
+    box-shadow: 54vmin 0 6.921760347044533vmin currentColor;
+}
+.background span:nth-child(16) {
+    color: var(--acc6);
+    top: 54%;
+    left: 55%;
+    animation-duration: 27s;
+    animation-delay: -31s;
+    transform-origin: -22vw 6vh;
+    box-shadow: 54vmin 0 7.26767415611336vmin currentColor;
+}
+.background span:nth-child(17) {
+    color: var(--acc7);
+    top: 88%;
+    left: 22%;
+    animation-duration: 48s;
+    animation-delay: -30s;
+    transform-origin: -5vw 9vh;
+    box-shadow: -54vmin 0 7.053974725568924vmin currentColor;
+}
+.background span:nth-child(18) {
+    color: var(--acc8);
+    top: 29%;
+    left: 53%;
+    animation-duration: 19s;
+    animation-delay: -14s;
+    transform-origin: 4vw 6vh;
+    box-shadow: -54vmin 0 7.640434719322548vmin currentColor;
+}
+.background span:nth-child(19) {
+    color: var(--acc9);
+    top: 32%;
+    left: 74%;
+    animation-duration: 20s;
+    animation-delay: -26s;
+    transform-origin: -4vw -8vh;
+    box-shadow: 54vmin 0 7.000337433118186vmin currentColor;
+}
+
+ </style>
+</html>
