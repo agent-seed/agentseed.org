@@ -10,16 +10,13 @@
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
 <div id="outwrap">
    <p id="out">[Output_here]</p> 
 </div>
 
 </center>
 <script>
-function calculate () {
+function calculate () {5
      num = document.getElementById('num').value
      num = num * 620000000000000000000000;
      document.getElementById('out').innerHTML = num;
@@ -35,8 +32,11 @@ function calculate () {
 
 </script>
 <style>
+    :root {
+        --accent: blueviolet;
+    }
     body {
-        background-color: #111;
+        background-color: #222;
         color: white;
         font-family: serif;
     }
@@ -48,24 +48,27 @@ function calculate () {
         border-radius: 10px;
         
     }
-    #outwrap {
+    #out {
         font-size: 60pt;
-        border: solid 2px purple;
+        border: solid 1px var(--accent);
         height: min-content;
         width: min-content;
         padding: 30px;
     }
     #num {
         background-color: #111;
-        border: solid 2px purple;
+        border: solid 1px var(--accent);
         font-size: 30pt;
         color: white;
+        padding: 10px;
     }
     #submit {
         background-color: #111;
-        border: solid 2px purple;
+        border: solid 1px var(--accent);
         font-size: 30pt;
-        color: white; 
+        color: white;
+        padding: 10px;
+        transition: 0.2s; 
     }
     #submit:active {
         transform: translate(5px, 5px);
