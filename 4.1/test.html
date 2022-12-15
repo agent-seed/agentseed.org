@@ -16,6 +16,7 @@
 <input type="radio" name="r" id="">
 <input type="radio" name="r" id="">
 <input type="radio" name="r" id="">
+<div class="grad"></div>
 <script>
 let x = 100; // x coordinate of the circle
 let y = 100; // y coordinate of the circle
@@ -68,6 +69,7 @@ drawCircle();
 <style>
     :root {
         --accent: rgba(255, 0, 200, 0.5);
+        --rainbow: (90deg, #ff0000 0%, #ffa400 9%, #d5e800 19%, #72ff00 27%, #00ff5b 37%, #00ffa0 43%, #00fff6 54%, #00aeff 62%, #003bff 70%, #2506ff 76%, #5700ff 81%, #ad00ff 86%, #d800ff 94%, #ff0090 100%);
     }
     html {
         background-color: black;
@@ -81,4 +83,11 @@ drawCircle();
         accent-color: var(--accent);
         cursor: none;
     }
+    .grad {
+        width: 300px;
+        height: 300px;
+        background-image: var(--rainbow);
+        border: 2px solid red;
+    }
 </style>
+<link rel="stylesheet" href="grads.css">

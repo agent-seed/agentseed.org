@@ -1,7 +1,22 @@
 <!DOCTYPE html>
+<img src="https://cdn.shopify.com/s/files/1/0201/9426/3140/products/AV41CROSBK_grande_973ae58d-d9ef-4600-93dc-d761e9ae8eea_1024x1024@2x.png?v=1548188425" alt="" id="img">
 <script>
     function getRandomInt(max) {
         return Math.floor(Math.random() * max);
     }
     console.log("rgb(" + getRandomInt(255) + ", " + getRandomInt(255) + ", " + getRandomInt(255)  + ")")
+    // Get the image element
+var img = document.getElementById("img");
+
+// Add an event listener to the image that listens for the "mousemove" event
+img.addEventListener("mousemove", function(event) {
+  // Update the image's x and y coordinates based on the cursor's position
+  img.style.left = event.clientX + "px";
+  img.style.top = event.clientY + "px";
+});
 </script>
+<style>
+    #img {
+        width: 100px;
+    }
+</style>
