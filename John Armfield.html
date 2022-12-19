@@ -26,7 +26,7 @@
     <br>
     <br>
         <div class="main" >
-            <img src="https://agentseed.org/placeholder.png" onclick="changeImage()" id="pfp">
+            <img src="https://agentseed.org/placeholder.png" onclick="changeImage()" id="pfp" alt="logo">
             <br>
             <br>
             <h1>John Armfield</h1>
@@ -38,9 +38,9 @@
                 <br>
             <hr>
             <p class="bottom-text">
-                <a href="https://docs.google.com/document/d/1W1tgiDhS3Y-PjFKaBGcHIBjkEosMSbAMX0FRefmvxV4/edit?usp=sharing"><img class="social" src="https://1000logos.net/wp-content/uploads/2020/05/Google-Docs-logo-400x400.png"></a>
-                <a href="https://en.wikipedia.org/wiki/John_Armfield"><img class="social" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Wikipedia_logo_v3.svg/2048px-Wikipedia_logo_v3.svg.png"></a>
-                <a href="https://encyclopediavirginia.org/entries/armfield-john-1797-1871/"><img class="social" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/University_of_Virginia_seal.svg/1200px-University_of_Virginia_seal.svg.png"></a>
+                <a href="https://docs.google.com/document/d/1W1tgiDhS3Y-PjFKaBGcHIBjkEosMSbAMX0FRefmvxV4/edit?usp=sharing"><img class="social" alt="Google docs logo" src="https://1000logos.net/wp-content/uploads/2020/05/Google-Docs-logo-400x400.png"></a>
+                <a href="https://en.wikipedia.org/wiki/John_Armfield"><img alt="wikipedia logo" class="social" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Wikipedia_logo_v3.svg/2048px-Wikipedia_logo_v3.svg.png"></a>
+                <a href="https://encyclopediavirginia.org/entries/armfield-john-1797-1871/"><img class="social" alt="encyclopediavirginia logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/University_of_Virginia_seal.svg/1200px-University_of_Virginia_seal.svg.png"></a>
             </p>
         </div>
         <span class="material-symbols-outlined" onclick="color()">
@@ -138,9 +138,11 @@
         margin: auto;
         display: block;
         background-color: rgba(0,0,0,0,0.4);
+        -webkit-backdrop-filter: blur(100px);
         backdrop-filter: blur(100px);
         border-radius: 10px;
         font-size: xx-large;
+        max-width: -moz-fit-content;
         max-width: fit-content;
         width: 70%;
         padding: 20px;
@@ -205,12 +207,14 @@
     'GRAD' 0,
     'opsz' 48;
     background-color: rgba(0,0,0,0,0.4);
+    -webkit-backdrop-filter: blur(100px);
     backdrop-filter: blur(100px);
     border-style: solid;
     border-color: transparent;
     border-width: 1px;
     border-radius: 10px;
     font-size: xx-large;
+    width: -moz-fit-content;
     width: fit-content;
     padding: 20px;
     text-align: center;
@@ -412,6 +416,7 @@ var color= "#" + z1 + x;
     width: 27vmin;
     height: 27vmin;
     border-radius: 27vmin;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     position: absolute;
     animation: move;
