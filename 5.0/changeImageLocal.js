@@ -1,3 +1,4 @@
+// this file was designed for local testing, I didn't have internet access at the time but I still wanted the changeImage script to work, so I wrote this.
 var backgrounds = [
     'C:/img24.jpg',
     'C:/img25.jpg',
