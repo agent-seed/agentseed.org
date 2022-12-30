@@ -14,7 +14,8 @@
       {
         "ignore": [
           "backdrop-filter",
-          "text-decoration-thickness"
+          "text-decoration-thickness",
+          "scroll-behavior"
         ]
       }
     ]
