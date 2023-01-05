@@ -207,7 +207,8 @@ a {
 a:hover {
     color: var(--accent-color);
     transition: 0.7s;
-    background-color: rgba(255, 255, 255, 0.138);
+    /* background-color: rgba(255, 255, 255, 0.138); */
+    border: var(--accent-color) dashed 1px;
 }
 .sidebar a {
     display: block;
@@ -235,7 +236,18 @@ code {
     color: var(--accent-color);
 }
 .down-icon {
-    font-size: 100px;
-    position: sticky;
-    bottom: 20px;
+    font-size: 50px;
+    background-color: #111;
+    height: fit-content;
+    transition: 0.6s;
+}
+.down-icon:hover {
+    transform: translate(0, 10px);
+    color: var(--accent-color);
+}
+.no-effects {
+    border: none;
+}
+.no-effects:hover {
+    border: none;
 }
