@@ -1,5 +1,4 @@
 function updateLinks() {
-    let contents = document.getElementById("sidebar").innerHTML;
     var link1url = '/'; link1text = 'Home';
     var link2url = '/aboutme'; link2text = 'About Me';
     var link3url = '/clock'; link3text = 'Clock';
