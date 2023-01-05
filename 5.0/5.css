@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Rajdhani:wght@500&family=Tiro+Telugu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0');
+@import url('https://agentseed.org/fonts/canterbury.css');
 @font-face {
     font-family: "canterbury";
     src: url("https://agentseed.org/fonts/canterbury.woff2") format("woff2"), url("https://agentseed.org/fonts/canterbury.woff") format("woff"), url("https://agentseed.org/fonts/canterbury.ttf") format("truetype");
@@ -5,10 +8,6 @@
     font-style: normal;
     unicode-range: U+0951-0952, U+0964-0965, U+0C00-0C7F, U+1CDA, U+200C-200D, U+25CC;
 }
-@import url("https://api.fonts.coollabs.io/css2?family=Tiro+Telugu&display=swap");
-@import url('https://api.fonts.coollabs.io/css?family=Rajdhani:300&display=swap');
-@import url('https://api.fonts.coollabs.io/icon?family=Material+Icons');
-/*@import url('https://agentseed.org/fonts/canterbury.css');*/
 :root {
     --font-color: white; /* var(--font-color) */
     --accent-color: rgb(255, 65, 198); /* var(--accent-color) */
@@ -106,6 +105,8 @@
     transition: 0.5s;
     -webkit-backdrop-filter: var(--blur);
     backdrop-filter: var(--blur);
+    font-size: 16pt;
+    font-family: 'IBM Plex Serif', serif;
 }
 .panel:hover {
     border-color: var(--accent-color);
@@ -224,12 +225,15 @@ code {
     background-color: var(--accent2);
     padding: 2px;
 }
-.material-symbols-outlined {
+/* .material-symbols-outlined {
     font-variation-settings:
         'FILL' 0,
         'wght' 400,
         'GRAD' 0,
         'opsz' 48;
+    cursor: pointer;
+} */
+.pointer {
     cursor: pointer;
 }
 .accent {
@@ -250,4 +254,33 @@ code {
 }
 .no-effects:hover {
     border: none;
+}
+footer {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+    
+.main {
+    scroll-snap-type: none;
+    scroll-snap-align: end;
+}
+body {
+    width: 100%;
+    margin: 0px;
+    
+    background-color: black;
+}
+.scroller {
+    height: 100%;
+    overflow-y: scroll;
+    scroll-snap-type: both proximity;
+}
+.scroller section {
+    scroll-snap-align: start;
+    transition: 5s;
+}
+section {
+    height: 100%;
+    background-attachment: fixed;
+    background-size: cover;
 }

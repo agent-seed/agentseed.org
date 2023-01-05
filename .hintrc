@@ -15,9 +15,11 @@
         "ignore": [
           "backdrop-filter",
           "text-decoration-thickness",
-          "scroll-behavior"
+          "scroll-behavior",
+          "height: fit-content"
         ]
       }
-    ]
+    ],
+    "no-inline-styles": "off"
   }
 }
