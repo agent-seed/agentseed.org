@@ -35,6 +35,9 @@
     padding: 10px;
     font-family: 'Rajdhani', sans-serif;
 }
+.menu a:hover {
+    border: var(--accent-color) dashed 1px;
+}
 #start {
     background-color: #111;
     width: 100%;
@@ -46,6 +49,21 @@
 }
 .transparent {
     border-color: transparent;
+}
+.buttons1 {
+    position: fixed;
+    right: 10px;
+    bottom: 65px;
+    padding: 10px;
+    background: var(--panel-color);
+    -webkit-backdrop-filter: var(--blur);
+    backdrop-filter: var(--blur);
+    border-radius: 10px;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1px;
+    box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.247);
+    transition: 0.5s;
 }
 .buttons {
     position: fixed;
@@ -62,7 +80,7 @@
     box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.247);
     transition: 0.5s;
 }
-.buttons:hover {
+.buttons:hover, .buttons1:hover {
     border-color: var(--accent-color);
     box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.651);
 }
@@ -209,7 +227,6 @@ a:hover {
     color: var(--accent-color);
     transition: 0.7s;
     /* background-color: rgba(255, 255, 255, 0.138); */
-    border: var(--accent-color) dashed 1px;
 }
 .sidebar a {
     display: block;
