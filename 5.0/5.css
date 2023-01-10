@@ -11,7 +11,7 @@
 :root {
     --font-color: white; /* var(--font-color) */
     --accent-color: rgb(255, 65, 198); /* var(--accent-color) */
-    --background-color: rgb(34, 34, 34); /* var(--background-color) */
+    --background-color: #111; /* var(--background-color) */
     --default-font: "Tiro Telugu", serif; /* var(--default-font) */
     --ellipsis: "...";
     --panel-color: rgba(0, 0, 0, 0.5); /* var(--panel-color) */
@@ -19,6 +19,7 @@
     --accent2: rgb(29, 29, 29); /* var(--accent2) */
     --background: url(https://images.unsplash.com/photo-1666694421187-75957423ee77); /* this is for the random background thing, it'll display this image if the script doesn't run */
     --blur: blur(50px);
+    --theme: 'dark';
 }
 #title {
     font-size: 50pt;
@@ -34,12 +35,13 @@
 .menu a {
     padding: 10px;
     font-family: 'Rajdhani', sans-serif;
+    color: var(--font-color);
 }
 .menu a:hover {
     border: var(--accent-color) dashed 1px;
 }
 #start {
-    background-color: #111;
+    background-color: var(--background-color);
     width: 100%;
     margin: 0px;
     padding: 0px;
@@ -79,6 +81,7 @@
     border-width: 1px;
     box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.247);
     transition: 0.5s;
+    color: var(--font-color);
 }
 .buttons:hover, .buttons1:hover {
     border-color: var(--accent-color);
@@ -105,6 +108,10 @@
     font-size: 150pt;
     color: var(--accent-color);
     width: 150px;
+    transition: 100ms;
+}
+.logo:hover {
+    transform: rotate(360deg);
 }
 .panel {
     padding: 15px;
@@ -149,17 +156,18 @@ body {
     background-size: cover;
     background-attachment: fixed;
     scroll-behavior: smooth;
+    transition: 0.5s;
 }
 * {
     scroll-behavior: smooth;
 }
 ::selection {
     background-color: var(--accent-color);
-    color: white;
+    color: var(--font-color);
 }
 ::-moz-selection {
     background-color: var(--accent-color);
-    color: white;
+    color: var(--font-color);
 }
 p {
     font-size: 15pt;
@@ -185,24 +193,6 @@ p {
     border-color: var(--accent-color);
     box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.651);
 }
-button {
-    background-color: var(--accent2);
-    border-style: solid;
-    border-color: white;
-    padding: 5px;
-    color: white;
-    font-size: 12pt;
-    transition: 0.7s;
-    font-family: var(--default-font);
-}
-button:hover {
-    border-color: var(--accent-color);
-    transition: 0.7s;
-}
-button:active {
-    color: var(--accent-color);
-    transition: 0.7s;
-}
 a {
     color: var(--font-color);
     text-decoration: underline;
@@ -225,10 +215,6 @@ a:hover {
     padding-left: 15%;
     padding-right: 15%;
 }
-code {
-    background-color: var(--accent2);
-    padding: 2px;
-}
 /* .material-symbols-outlined {
     font-variation-settings:
         'FILL' 0,
@@ -245,7 +231,6 @@ code {
 }
 .down-icon {
     font-size: 50px;
-    background-color: #111;
     height: fit-content;
     transition: 0.5s;
 }
@@ -271,7 +256,6 @@ footer {
 body {
     width: 100%;
     margin: 0px;
-    
     background-color: black;
 }
 .scroller {
